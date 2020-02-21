@@ -1,0 +1,121 @@
+package peru.volcanes.volcanesper;
+
+/**
+ * Created by usuario on 02/10/2018.
+ */
+
+//public class Ver {
+//}
+
+
+////
+
+
+public class MyGcmListenerService extends GcmListenerService {
+
+    private static final String TAG = "MyGcmListenerService";
+    private NotificationManager notifManager;
+    private NotificationChannel mChannel;
+
+    /**     * Called when message is received.     *
+
+     * @param from SenderID of the sender.
+
+
+     * @param data Data bundle containing message data as key/value pairs.
+
+     *             For Set of keys use data.keySet().
+
+     */    // [START receive_message]    @Override
+
+    public void onMessageReceived (String from, Bundle data) {
+        String message = data.getString ("message");
+        Log.d (TAG, "Message: " + message);
+
+        sendNotification (message, message);
+
+        // [END_EXCLUDE]    }
+        // [END receive_message]
+        /**     * Create and show a simple notification containing the
+
+         received GCM message.     *
+
+         * @param message GCM message received.     */
+
+    private void sendNotification (String message, String title) {
+        Intent intent;
+        PendingIntent pendingIntent;
+        NotificationCompat.Builder builder;
+        if (notifManager == null) {
+            notifManager = (NotificationManager) getSystemService
+
+                    (Context.NOTIFICATION_SERVICE);
+        }
+
+        intent = new Intent (this, MainActivity.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            if (mChannel == null) {
+                NotificationChannel mChannel = new NotificationChannel
+
+                        ("0", title, importance);
+                mChannel.setDescription (message);
+                mChannel.enableVibration (true);
+                mChannel.setVibrationPattern (new long[]
+
+                        {100, 200, 300, 400, 500, 400, 300, 200, 400});
+                notifManager.createNotificationChannel (mChannel);
+            }
+            builder = new NotificationCompat.Builder (this, "0");
+
+            intent.setFlags (Intent.FLAG_ACTIVITY_CLEAR_TOP |
+
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            pendingIntent = PendingIntent.getActivity (this, 0, intent, 0);
+            builder.setContentTitle (title)  // flare_icon_30
+
+                    .setSmallIcon (R.mipmap.app_icon) // required
+
+                    .setContentText (message)  // required
+
+                    .setDefaults (Notification.DEFAULT_ALL)
+                    .setAutoCancel (true)
+                    .setLargeIcon (BitmapFactory.decodeResource
+
+                            (getResources (), R.mipmap.app_icon))
+                    .setBadgeIconType (R.mipmap.app_icon)
+                    .setContentIntent (pendingIntent)
+                    .setSound (RingtoneManager.getDefaultUri
+
+                            (RingtoneManager.TYPE_NOTIFICATION))
+                    .setVibrate (new long[]{100, 200, 300, 400,
+
+                            500, 400, 300, 200, 400});
+        } else {
+
+            builder = new NotificationCompat.Builder (this);
+
+            intent.setFlags (Intent.FLAG_ACTIVITY_CLEAR_TOP |
+
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            pendingIntent = PendingIntent.getActivity (this, 0, intent, 0);
+            builder.setContentTitle (title)
+                    .setSmallIcon (R.mipmap.app_icon) // required
+
+                    .setContentText (message)  // required
+
+                    .setDefaults (Notification.DEFAULT_ALL)
+                    .setAutoCancel (true)
+                    .setContentIntent (pendingIntent)
+                    .setSound (RingtoneManager.getDefaultUri
+
+                            (RingtoneManager.TYPE_NOTIFICATION))
+                    .setVibrate (new long[]{100, 200, 300, 400, 500,
+
+                            400, 300, 200, 400})
+                    .setPriority (Notification.PRIORITY_HIGH);
+        } // else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        Notification notification = builder.build ();
+        notifManager.notify (0, notification);
+    }
+}

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+     <SlidingDrawer
+        android:id="@+id/slidingDrawer"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone">
+            <RelativeLayout
+                android:id="@+id/handle"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+            <RelativeLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparente"
+                android:paddingTop="5dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/opciones2"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:paddingRight="1dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque62"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                style="@style/cancel_btn_style"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:id="@+id/ima12"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="17dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/pronos"/>
+                                <TextView
+                                    android:layout_toEndOf="@+id/ima12"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Pronóstico de Dispersión de Cenizas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/trayectoria_cenizas_text222">
+                                </TextView>
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_alignParentRight="true"
+                                    android:id="@+id/senahmilogo"
+                                     android:layout_height="28dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/logosenamhi5"/>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/opciones2"
+                    android:id="@+id/opciones6"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_weight="1"
+                            android:layout_column="0"
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:paddingRight="1dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque5"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/cancel_btn_style"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:orientation="vertical" >
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:id="@+id/ima4"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="17dp"
+                                    android:src="@drawable/ic_warning_black_24dp"/>
+
+                                <TextView
+                                    android:id="@+id/alertacenizas_text"
+                                    style="@style/opciones_volcan_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@+id/ima4"
+                                    android:text="Alertas de Dispersión de Cenizas"></TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_below="@id/opciones6"
+                    android:id="@+id/opciones4"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:paddingRight="1dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque7"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                android:paddingTop="11dp"
+                                style="@style/cancel_btn_style"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:orientation="vertical" >
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:id="@+id/trayec"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="17dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/ic_input_black_24dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_toEndOf="@+id/trayec"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Registros Sísmicos en Tiempo Real"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/trayectoria_cenizas_text3">
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/opciones8"
+                    android:layout_below="@+id/opciones4"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:paddingRight="1dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque1"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                style="@style/cancel_btn_style"
+                                android:layout_width="match_parent"
+                                android:id="@+id/bloque1btn"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentStart="true">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    style="@style/iconos_opciones_volcan"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/mapa"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/planeta">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@+id/mapa"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:text="Sismograma en tiempo real"
+                                    android:id="@+id/mapa_text" >
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/opciones8"
+                    android:id="@+id/opciones7"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:paddingRight="1dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque4"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/cancel_btn_style"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:orientation="vertical"
+                                android:layout_alignParentTop="true">
+                                <TextView
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/camara"
+                                    style="@style/iconos_opciones_volcan"
+                                    android:id="@+id/camara">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_toEndOf="@+id/camara"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Imágenes Digitales en Tiempo Real"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/camara_text">
+                                </TextView>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/opciones7"
+                    android:id="@+id/opciones5"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:paddingRight="1dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque3"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                android:paddingTop="11dp"
+                                style="@style/cancel_btn_style"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="17dp"
+                                    android:id="@+id/ima3"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:src="@drawable/ic_assignment_black_24dp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_toEndOf="@+id/ima3"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Reportes de Actividad Volcánica"
+
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/trayectoria_cenizas_text2">
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_below="@+id/opciones5"
+                    android:id="@+id/opciones72"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:paddingRight="1dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque42"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/cancel_btn_style"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:orientation="vertical"
+                                android:layout_alignParentTop="true">
+                                <TextView
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/planeta"
+                                    style="@style/iconos_opciones_volcan"
+                                    android:id="@+id/camara2">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_toEndOf="@+id/camara2"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Mapa de Sismicidad Volcánica"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/camara_text2">
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/opciones72"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/opciones3"
+                    android:padding="0dp"
+                    android:layout_height="50dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:paddingRight="1dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloque6"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                style="@style/cancel_btn_style"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:id="@+id/ima1"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_height="17dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/pronos"/>
+                                <TextView
+                                    android:layout_toEndOf="@+id/ima1"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Cámara en tiempo real"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/trayectoria_cenizas_text">
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:id="@+id/opciones9"
+                    android:layout_below="@+id/opciones72"
+                    android:padding="0dp"
+                    android:layout_height="10dp" >
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:paddingLeft="1dp"
+                            android:gravity="center"
+                            android:paddingRight="1dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:id="@+id/bloquex"
+                            android:paddingTop="0dp">
+                            <RelativeLayout
+                                  android:layout_width="match_parent"
+                                android:id="@+id/bloque1btnx"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingTop="11dp"
+                                android:paddingBottom="11dp"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentStart="true">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:visibility="gone"
+                                    style="@style/iconos_opciones_volcan"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/mapax"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="@string/planeta">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:visibility="gone"
+                                    android:layout_toEndOf="@+id/mapax"
+                                    android:layout_height="wrap_content"
+                                    style="@style/opciones_volcan_text"
+                                    android:id="@+id/mapa_textx" >
+                                </TextView>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </SlidingDrawer>
+</RelativeLayout>

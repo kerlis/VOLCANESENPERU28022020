@@ -1,0 +1,675 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+<!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
+        <item name="colorPrimary">@color/blanco</item>
+        <item name="colorPrimaryDark">@color/azulbackground</item>
+        <item name="colorAccent">@color/azulbackground</item>
+    </style>
+    -->
+
+    <style name="MainStyle">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/amarillo</item>
+    </style>
+
+    <style name="style0">
+        <item name="android:textSize">50dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/azuligp</item>
+    </style>
+
+    <style name="style1">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="TitleBarText1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:lineSpacingExtra">15dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingLeft">6dip</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="censislogo_normal_port">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_width">220dp</item>
+    </style>
+
+
+
+    <style name="texto_glosario">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="titulo_glosario">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textomenuigp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/blanco</item>
+    </style>
+
+    <style name="tituloreporte">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="titulo_trayectorias">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="status_text">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="titulo_inicio_volcanes">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:height">70dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="subtitulo_inicio_volcanes">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:height">70dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/grisoscuro</item>
+    </style>
+
+    <style name="etiqueta_detalles">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/negro_suave1</item>
+    </style>
+
+    <style name="enlaces">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/rojovolcan</item>
+    </style>
+
+    <style name="texto_detalles">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="tablas_detalles">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="tablas_detalles2">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/plomo_oscuro</item>
+    </style>
+
+    <style name="tablas_detalles_titulos">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+
+    <style name="titulolistadoerupciones">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+
+    <style name="iconos_normal_port">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/grisoscuro2</item>
+    </style>
+
+    <style name="iconos_detalles">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/celesteigp</item>
+    </style>
+
+    <style name="iconos_big_port">
+        <item name="android:textSize">35sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/grisoscuro2</item>
+    </style>
+
+    <style name="iconoslabels">
+        <item name="android:textColor">@color/celesteigp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="text_detalles">
+        <item name="android:textColor">@color/plomo</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="iconosdatos">
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">3dp</item>
+    </style>
+
+    <style name="filasdatospad">
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+
+    <style name="volcan_text">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="status">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="convenciones_text">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="bloque_azul">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:background">@color/igp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="bloque_azul_bordes">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:background">@color/igp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="titulo_inicio_volcanes_convenciones">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="lbl_ultima_Actualizacion">
+        <item name="android:textColor">@color/celeste_boton_sugerencias</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txt_ultima_Actualizacion">
+        <item name="android:textColor">@color/plomo_oscuro</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="menu_textos">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="opciones_volcan_text">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="leyenda_volcan">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">9.5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="leyenda_nivel">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">9.5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="iconos_opciones_volcan">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textos_opciones_volcan">
+        <item name="android:textColor">@color/negrodos</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="volcan_nombre_listado">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="iconodescargar">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="tituloapp">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="volcan_status_label_listado">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="informacion_titulo">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="informacion_texto">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="informacion_titulo_convenciones">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="label_trayectorias">
+        <item name="android:textColor">@color/celesteigp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_trayectorias">
+        <item name="android:textColor">@color/grisoscuro</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tituloconfiguraciones">
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="textonulo">
+        <item name="android:textColor">@color/transparente3</item>
+
+    </style>
+
+    <style name="logoigp_normal_port2">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="logoigp_normal_port3">
+        <item name="android:layout_width">65dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="logoigp_normal_port23">
+        <item name="android:layout_width">82dp</item>
+        <item name="android:layout_height">84dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="datossetlabel">
+        <item name="android:textColor">@color/ubicacion</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="datosset">
+        <item name="android:textColor">@color/encabezado</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titulo_layer">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+    </style>
+
+    <style name="titulo_layer_text">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="icono_image_normal_port">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="magnitudiconodato">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="fechareporte">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="iconoreportesestilo">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+
+    <style name="iconoreportesestilolarge">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+
+    <style name="iconoreportesestilosmall">
+        <item name="android:textSize">11dp</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+
+
+    </style>
+
+
+    <style name="datoubicacionlistview">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="textolistadovolcanes">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textolistadovolcanes25">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="textolistadovolcanes2">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/celesteigp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="textolistadovolcanesestado">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/celesteigp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">11.5sp</item>
+    </style>
+
+
+    <style name="textolistadovolcanes2fecha">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/botonsismos</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="textolistadovolcanestitulo">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="datoprofimaxlistview">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="datofechalistview">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlHighlight">@color/botonsismosclic</item>
+        <item name="colorButtonNormal">@color/botonsismos</item>
+    </style>
+
+    <style name="botonconfiguraciones" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlHighlight">@color/celesteigp</item>
+        <item name="colorButtonNormal">@color/celesteigp</item>
+    </style>
+
+    <style name="estilocontenedor">
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="alertaicono">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+
+    </style>
+
+    <style name="imagenespuntosprofundidad1">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="imagenespuntosprofundidad2">
+        <item name="android:layout_width">6dp</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="imagenespuntosprofundidad3">
+        <item name="android:layout_width">9dp</item>
+        <item name="android:layout_height">9dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="imagenespuntosprofundidad4">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="textoprofundidades">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <style name="menuopcionestext">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/negro</item>
+    </style>
+
+    <style name="contenedormenuopcion">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="espacioletra">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="cancel_btn_style" parent="Theme.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:shadowDx">-1</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">@color/grisoscuro</item>
+        <item name="android:background">@drawable/ripple</item>
+    </style>
+
+
+    <style name="magnitudiconodato2">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <style name="titulolistadosismos">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@color/azulbackground</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+
+    <style name="titulolistadosismos2">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+    <style name="iconocloseglosario">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+
+
+
+</resources>

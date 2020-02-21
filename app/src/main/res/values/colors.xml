@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="rojovolcan">#3DB4E7</color>
+    <color name="celesteigp">#21bff6</color>
+    <color name="celesteigp_claro">#6CD0FF</color>
+    <color name="botonsismos">#78909c</color>
+    <color name="botonsismosclic">#455a64</color>
+    <color name="fondogrisclaro">#eceff1</color>
+    <color name="azulblack_igp">#001665</color>
+    <color name="grisigp">#f8f8f8</color>
+    <color name="purpura">#800080</color>
+    <color name="marron">#A52A2A</color>
+    <color name="rojo_oscuro">#A52A2A</color>
+    <color name="azulOscuro">#191970</color>
+    <color name="gris">#cfd8dc</color>
+    <color name="naranja">#FF8C00</color>
+    <color name="orquidea">#BA55D3</color>
+    <color name="magenta">#d545f9</color>
+    <color name="negro">#000000</color>
+    <color name="plomo">#8C8C8C</color>
+    <color name="plomo_oscuro">#4C4C4C</color>
+    <color name="plomo_clarito2">#EBEBDF</color>
+    <color name="plomo_clarito3">#ABA8A1</color>
+    <color name="plomo_medio">#5b5b5b</color>
+    <color name="naranjas">#f50</color>
+    <color name="rojo">#f50</color>
+    <color name="blanco">#ffffff</color>
+    <color name="alarma">#f44336</color>
+    <color name="azuligp">#1565c0</color>
+    <color name="encabezado">#2196f3</color>
+    <color name="complemento">#bdbdbd</color>
+    <color name="verdefecha">#3f51b5</color>
+    <color name="ver_profundidad_distancia">#607d8b</color>
+    <color name="ubicacion">#455a64</color>
+    <color name="grisoscuro">#607d8b</color>
+    <color name="grisoscuro2">#4F6777</color>
+    <color name="rojotext">#ff4638</color>
+    <color name="etiquetas_filtros">#000000</color>
+    <color name="radioboton_color">#00CEF5</color>
+    <color name="orangeyellow">#FBBD08</color>
+    <color name="orangeyellow2">#FBD158</color>
+    <color name="orangeyellowoscuro">#daa51e</color>
+    <color name="amarillo">#e5ed00</color>
+    <color name="verde">#00d24b</color>
+    <color name="rojo2">#fc3400</color>
+    <color name="plomo_clarito">#818785</color>
+    <color name="rojooscuro">#f44336</color>
+    <color name="blanco2">#00ffffff</color>
+    <color name="gris_claro">#959B9E</color>
+    <color name="gris_claro2">#83888b</color>
+    <color name="celeste_boton_sugerencias">#0BBBE3</color>
+    <color name="celeste_sombra_boton_sugerencias">#06738c</color>
+    <color name="textomenuigp">#164769</color>
+    <color name="blancohueso">#f5f5f5</color>
+    <color name="rojoigp">#db2828</color>
+    <color name="rojoigp2">#DB5151</color>
+    <color name="verdeigp">#04B70D</color>
+    <color name="verdeigp2">#69BF6E</color>
+    <color name="transparente">#73000000</color>
+    <color name="transparente6">#44000000</color>
+    <color name="azulbackground">#001665</color>
+    <color name="transparente7">#99000000</color>
+    <color name="blancos">#ffffff</color>
+    <color name="transparente2">#00000000</color>
+    <color name="transparente4">#66FFFFFF</color>
+    <color name="transparente3">#dbdbdb</color>
+    <color name="transparente5">#99001C3F</color>
+    <color name="transparenteverde">#9904B70D</color>
+    <color name="transparentenaranja">#99DB5151</color>
+    <color name="transparenteamarillo">#99FBBD08</color>
+    <color name="transparenterojo">#99db2828</color>
+    <color name="black_v">#000000</color>
+    <color name="verde_v">#00d24b</color>
+    <color name="amarillo_v">#f9f900</color>
+    <color name="orange_v">#ff8800</color>
+    <color name="red_v">#ff0808</color>
+    <color name="blackred_v">#7c1008</color>
+    <color name="negro_suave1">#1e1e1e</color>
+    <color name="igp">#001665</color>
+    <color name="igphover">#001665</color>
+    <color name="borde1">#001665</color>
+    <color name="borde2">#001665</color>
+    <color name="igp2">#001665</color>
+    <color name="negrodos">#2B2B2B</color>
+    <color name="blancobase">#858585</color>
+
+    <color name="grisclaro55">#E8E8E8</color>
+    <color name="white">#E8E8E8</color>
+
+
+    <color name="amarilloigptext">#F3BD32</color>
+    <color name="verdeigptext">#00A400</color>
+    <color name="naranjaigptext">#FF5B2D </color>
+    <color name="rojoigptext2">#FF1D2D</color>
+
+    <color name="celesteigptext">#26B4E9</color>
+
+
+
+    <color name="colorconectado">#00FF79</color>
+    <color name="colordesconectado">#FF0035</color>
+
+
+    <color name="transparente_popup2">#00ffffff</color>
+    <color name="transparente_popup">#00ff0000</color>
+
+    <color name="naranjacolor">#F15A23</color>
+
+    <color name="negrotra">#00000000</color>
+
+</resources>

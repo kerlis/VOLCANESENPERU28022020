@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_below="@+id/encabezado"
+        android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/encabezado2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/encabezado"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+
+        <ScrollView
+            android:layout_below="@+id/encabezado2"
+            android:id="@+id/myview"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/content_main"
+
+                android:layout_width="match_parent"
+                android:background="@color/blanco"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    style="@style/titulo_layer"
+                    android:background="@color/igp"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_height="60dp"
+                    android:id="@+id/titulopantalla_detalles">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/bloque0_p"
+                        android:gravity="center_horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_height="60dp">
+
+                        <RelativeLayout
+                            android:id="@+id/b2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/fondovolcan">
+
+                            <ImageView
+                                android:id="@+id/estado_volcan"
+                                android:layout_width="21dp"
+                                android:layout_height="21dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"></ImageView>
+                        </RelativeLayout>
+
+                        <RelativeLayout android:layout_width="wrap_content"
+                            android:id="@+id/textojhead"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@+id/b2"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/text_volcan"
+                                style="@style/titulo_layer_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_horizontal"></TextView>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_below="@+id/titulopantalla_detalles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/conte">
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/conte2"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="7dp">
+
+
+                        <!--
+
+
+
+                                                <RelativeLayout android:layout_width="match_parent"
+                                                    android:layout_below="@id/options34"
+                                                    android:padding="2dp"
+                                                    android:layout_height="match_parent"
+                                                    android:id="@+id/prueba2">
+
+
+
+
+
+
+                                                    <RelativeLayout android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_below="@+id/bloc11"
+                                                        android:layout_marginTop="8dp"
+                                                        android:layout_weight="12"
+                                                        android:orientation="horizontal">
+                                                        <RelativeLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:id="@+id/sec1"
+                                                            android:layout_height="wrap_content" >
+
+                                                            <ImageView
+                                                                android:layout_width="45dp"
+                                                                android:layout_height="40dp"
+                                                                android:layout_marginRight="17dp"
+                                                                android:gravity="center_vertical"
+                                                                android:src="@drawable/iconoglaciar"
+                                                                android:layout_marginLeft="17dp"
+                                                                android:paddingLeft="0dp"
+                                                                android:paddingRight="0dp"
+                                                                android:id="@+id/iconoglaciares"
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_centerVertical="true"/>
+
+                                                            <TextView
+                                                                android:text="Glaciares"
+                                                                android:layout_toEndOf="@+id/iconoglaciares"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:id="@+id/glaciares_label"
+                                                                style="@style/iconoslabels"/>
+
+                                                            <TextView
+                                                                android:id="@+id/text_glaciares"
+                                                                android:layout_toEndOf="@+id/iconoglaciares"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="Story"
+                                                                android:layout_below="@+id/glaciares_label"
+                                                                style="@style/text_detalles"/>
+
+                                                        </RelativeLayout>
+
+                                                        <RelativeLayout
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_toEndOf="@+id/sec1"
+                                                            android:layout_alignParentEnd="true"
+                                                            android:layout_height="match_parent" >
+
+
+
+
+                                                            <ImageView
+                                                                android:layout_width="45dp"
+                                                                android:layout_height="40dp"
+
+                                                                android:layout_toStartOf="@+id/latitud_longitud_label"
+                                                                android:layout_marginRight="17dp"
+                                                                android:gravity="center_vertical"
+                                                                android:src="@drawable/iconoubicacion"
+                                                                android:paddingLeft="0dp"
+                                                                android:paddingRight="0dp"
+                                                                android:id="@+id/iconoubicacion"
+                                                                android:layout_gravity="center_vertical"
+                                                                android:layout_centerVertical="true"/>
+
+                                                            <TextView
+                                                                android:text="Localización       "
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_alignParentEnd="true"
+                                                                android:layout_height="wrap_content"
+                                                                android:id="@+id/latitud_longitud_label"
+                                                                style="@style/iconoslabels"/>
+
+                                                            <TextView
+                                                                android:id="@+id/text_latitud_longitud"
+                                                                android:layout_toEndOf="@+id/iconoubicacion"
+                                                                android:layout_below="@+id/latitud_longitud_label"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:text="Story"
+                                                                style="@style/text_detalles"/>
+                                                        </RelativeLayout>
+                                                    </RelativeLayout>
+
+
+
+
+
+
+
+                                                </RelativeLayout>
+
+                        -->
+
+
+                        <TableLayout
+                            android:id="@+id/options34"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="22dp">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/cell1top"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="53dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/blanco"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="0dp"
+                                    android:textAlignment="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/cell1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@color/blanco"
+                                        android:paddingBottom="0dp"
+                                        android:paddingTop="0dp"
+                                        android:textAlignment="center">
+
+                                        <ImageView
+                                            android:id="@+id/iconoaltura"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginRight="7dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="0dp"
+                                            android:paddingRight="0dp"
+                                            android:src="@drawable/iconoaltura" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/labelsaltura"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toEndOf="@id/iconoaltura">
+
+                                            <TextView
+                                                android:id="@+id/text_altura"
+                                                style="@style/iconoslabels"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Elevación"/>
+
+                                            <TextView
+                                                android:id="@+id/altura_label"
+                                                style="@style/text_detalles"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/text_altura"
+                                                android:layout_marginTop="1dp"
+                                                android:text="Altura m/ft" />
+                                        </RelativeLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/cell2top"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="53dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/blanco"
+                                    android:paddingBottom="0dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingTop="0dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/cell2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@color/blanco"
+                                        android:paddingBottom="0dp"
+                                        android:paddingTop="0dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconocenizas"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:layout_toStartOf="@+id/labelserupcion"
+                                            android:paddingLeft="0dp"
+                                            android:paddingRight="0dp"
+                                            android:src="@drawable/iconoexplosion" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/labelserupcion"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true">
+
+                                            <TextView
+                                                android:id="@+id/diametro_label"
+                                                style="@style/iconoslabels"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:text="Última erupción" />
+
+                                            <TextView
+                                                android:id="@+id/text_diametro"
+                                                style="@style/text_detalles"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_below="@+id/diametro_label"
+                                                android:text="Story" />
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </TableRow>
+
+
+                            <!--////////////////////////////-->
+
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="22dp">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/cell1bottom"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="53dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/blanco"
+                                    android:paddingBottom="0dp"
+                                    android:paddingLeft="7dp"
+                                    android:paddingTop="0dp"
+                                    android:textAlignment="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/cell2f"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@color/blanco"
+                                        android:paddingBottom="0dp"
+                                        android:paddingTop="0dp"
+                                        android:textAlignment="center">
+
+                                        <ImageView
+                                            android:id="@+id/iconoglaciares"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginRight="7dp"
+                                            android:gravity="center_vertical"
+                                            android:paddingLeft="0dp"
+                                            android:paddingRight="0dp"
+                                            android:src="@drawable/iconoglaciar" />
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_toEndOf="@id/iconoglaciares">
+
+                                            <TextView
+                                                android:id="@+id/glaciares_label"
+                                                style="@style/iconoslabels"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Glaciares" />
+
+                                            <TextView
+                                                android:id="@+id/text_glaciares"
+                                                style="@style/text_detalles"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/glaciares_label"
+                                                android:text="Story" />
+                                        </RelativeLayout>
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/cell2top44"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="53dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/blanco"
+                                    android:paddingBottom="0dp"
+                                    android:paddingRight="7dp"
+                                    android:paddingTop="0dp">
+
+                                    <RelativeLayout
+                                        android:id="@+id/cell244"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:background="@color/blanco"
+
+                                        android:paddingBottom="0dp"
+                                        android:paddingTop="0dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconoubicacion"
+                                            android:layout_width="45dp"
+                                            android:layout_height="45dp"
+                                            android:layout_toStartOf="@+id/labellocalizacion"
+                                            android:paddingLeft="0dp"
+                                            android:paddingRight="0dp"
+                                            android:src="@drawable/iconoubicacion" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/labellocalizacion"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true">
+
+                                            <TextView
+                                                android:id="@+id/latitud_longitud_label"
+                                                style="@style/iconoslabels"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Localización       " />
+
+                                            <TextView
+                                                android:id="@+id/text_latitud_longitud"
+                                                style="@style/text_detalles"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/latitud_longitud_label"
+                                                android:text="Story" />
+
+                                        </RelativeLayout>
+
+
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/options34"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:id="@+id/bloque1_actividadreciente"
+                            android:gravity="left"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/background_detailsrow"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                android:text="Actividad reciente :"
+                                android:id="@+id/label_actividadreciente"
+                                style="@style/iconoslabels">
+                            </TextView>
+
+                            <TextView
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:maxLength="25"
+                                style="@style/text_detalles"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/text_actividad_reciente"
+                                >
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/bloque1_actividadreciente"
+                            android:layout_width="match_parent"
+                            android:id="@+id/bloque_tipo_volcan"
+                            android:padding="2dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="left"
+                            android:background="@drawable/background_detailsrow"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo: "
+                                android:layout_marginLeft="15dp"
+                                style="@style/iconoslabels"
+                                android:id="@+id/label_tipo">
+                            </TextView>
+
+                            <TextView
+                                android:layout_toEndOf="@+id/label_tipo"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:maxLength="30"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                style="@style/text_detalles"
+                                android:id="@+id/text_tipo" >
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/bloque_tipo_volcan"
+                            android:layout_width="match_parent"
+                            android:gravity="left"
+                            android:paddingLeft="7dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:paddingRight="7dp"
+                            android:background="@drawable/background_detailsrow"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:id="@+id/bloque_monitoreo">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_horizontal"
+                                android:layout_centerVertical="true"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/lbl_monitoreo"
+                                style="@style/iconoslabels"
+                                android:text="Monitoreo: ">
+                            </TextView>
+
+                            <TextView
+                                android:layout_toEndOf="@+id/lbl_monitoreo"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                style="@style/text_detalles"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/monitoreo">
+                            </TextView>
+                            <!--                        android:maxLength="30"
+                            -->
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/bloque_monitoreo"
+                            android:layout_width="match_parent"
+                            android:padding="2dp"
+                            android:paddingLeft="7dp"
+                            android:paddingRight="7dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cismoscercanos2">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                style="@style/enlaces"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:text="Mapa de Ubicación: "
+                                android:id="@+id/sismoscercanosalvolcan">
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/cismoscercanos2"
+                            android:paddingTop="11dp"
+                            android:layout_marginBottom="7dp"
+                            android:paddingBottom="9dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sepracion2">
+                        </RelativeLayout>
+
+                        <FrameLayout
+                            android:layout_below="@+id/sepracion2"
+                            android:id="@+id/mapx"
+                            android:name="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="match_parent"
+                            android:background="?attr/colorControlHighlight"
+                            android:layout_height="240dp">
+                            <Button
+                                android:layout_width="80dp"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="4dp"
+                                android:id="@+id/satelite"
+                                android:text="SATELITE"
+                                android:textSize="14dp"
+                                android:textColor="@color/blanco"
+                                android:layout_height="30dp"
+                                android:background="@color/transparente">
+                            </Button>
+                            <Button
+                                android:layout_width="80dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="90dp"
+                                android:textColor="@color/blanco"
+                                android:id="@+id/terreno"
+                                android:textSize="14dp"
+                                android:text="TERRENO"
+                                android:layout_height="30dp"
+                                android:background="@color/transparente">
+                            </Button>
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginLeft="200dp"
+                                android:textColor="@color/blanco"
+                                android:id="@+id/localizacion"
+                                android:textSize="17dp"
+                                android:text="@string/localizacion"
+                                android:layout_height="30dp"
+                                android:background="@color/transparente">
+                            </Button>
+
+                        </FrameLayout>
+
+
+
+                        <RelativeLayout
+                            android:layout_below="@+id/mapx"
+                            android:paddingTop="11dp"
+                            android:visibility="gone"
+                            android:layout_marginBottom="14dp"
+                            android:paddingBottom="9dp"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/background_detailsrow"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sepracion5">
+                        </RelativeLayout>
+
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_below="@+id/mapx"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/resena"
+                            android:padding="0dp"
+                            android:layout_height="match_parent">
+                            <!--
+                          <TextView android:layout_width="match_parent"
+                                    android:id="@+id/textoresena"
+                                    android:layout_gravity="center_vertical|right"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true">
+                          </TextView>
+                            -->
+                            <TextView android:layout_width="match_parent"
+                                android:visibility="gone"
+                                android:layout_height="wrap_content"
+                                android:text="Reseña Historica : "
+                                style="@style/enlaces"
+                                android:layout_marginBottom="8dp"
+                                android:id="@+id/tituloresena" >
+                            </TextView>
+
+   <!--                         <FrameLayout
+                                android:layout_below="@+id/tituloresena"
+                                android:id="@+id/fotocontainer"
+                                android:padding="0dp"
+
+                                android:layout_width="fill_parent" android:layout_height="fill_parent">
+-->
+                                <!--                             <ImageView
+                                                                 android:layout_width="fill_parent" android:layout_height="fill_parent"
+                                                                 android:src="@drawable/back" android:scaleType="fitXY" />
+                             -->
+                                <ImageView
+                                    android:layout_below="@+id/tituloresena"
+
+                                    android:id="@+id/foto"
+                                    android:background="@color/alarma"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:padding="0dp"
+                                     android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"/>
+
+
+                            <!--</FrameLayout>-->
+
+                            <!--
+                            <ImageView
+                                android:layout_below="@+id/tituloresena"
+                                android:id="@+id/foto"
+                                android:layout_marginTop="0dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="0dp"/>-->
+
+                            <WebView android:layout_width="match_parent"
+                                android:layout_below="@+id/foto"
+                                android:id="@+id/parrafo"
+                                android:layout_height="wrap_content"/>
+
+                            <!--com.bluejamesbond.text.DocumentView-->
+
+                            <TextView android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:visibility="gone"
+                                android:layout_below="@+id/foto"
+                                android:lineSpacingExtra="10dp"
+                                style="@style/TitleBarText1"
+
+                                android:id="@+id/textoresena">
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/resena"
+                            android:paddingTop="11dp"
+                            android:layout_marginBottom="14dp"
+                            android:paddingBottom="9dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sepracion">
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/resena"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:id="@+id/enlaceserupciones">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                style="@style/enlaces"
+                                android:layout_width="match_parent"
+                                android:text="Erupciones: "
+                                android:id="@+id/enlaceserupcionestext">
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/enlaceserupciones"
+                            android:paddingTop="11dp"
+                            android:layout_marginBottom="7dp"
+                            android:paddingBottom="9dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sepracion3">
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@+id/sepracion3"
+                            android:layout_width="match_parent"
+                            android:id="@+id/titulo_table2"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/linearbackground2">
+
+
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/options3"
+                                android:layout_height="wrap_content">
+
+                                <TableRow android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="4dp"
+                                        android:paddingRight="4dp"
+                                        android:layout_weight="1">
+                                        <TextView
+                                            android:id="@+id/encabezado_year"
+                                            android:layout_alignParentStart="true"
+                                            android:gravity="left"
+                                            style="@style/titulolistadoerupciones"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Observaciones"/>
+                                    </RelativeLayout>
+
+
+                                    <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="4dp"
+                                        android:paddingRight="4dp"
+                                        android:layout_gravity="center_horizontal" >
+                                        <TextView
+                                            android:layout_alignParentRight="true"
+                                            android:gravity="right"
+                                            style="@style/titulolistadoerupciones"
+                                            android:id="@+id/encabezado_actividad"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Año   "/>
+                                    </RelativeLayout>
+                                </TableRow>
+                            </TableLayout>
+
+                        </RelativeLayout>
+<!--
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:id="@+id/bloque14">     </RelativeLayout>
+
+                            <ListView
+                                android:layout_below="@+id/titulo_table2"
+                                android:layout_weight="0.1"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="500dp"
+                                android:id="@+id/ultimas_erupciones">
+                            </ListView>
+
+
+                        <RelativeLayout android:layout_width="match_parent"
+                            android:layout_below="@+id/titulo_table2"
+                            android:id="@+id/topbutton2"
+                            android:background="@color/azuligp"
+                            android:layout_height="50dp"/>  -->
+
+
+                        <!--
+                                                <RelativeLayout android:layout_width="match_parent"
+                                                    android:id="@+id/topbutton"
+                                                    android:background="@color/azuligp"
+                                                    andrlayout_alignParentBottom="true"
+                                                    android:layout_height="100dp"/>
+
+
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/titulo_table2"
+                            android:layout_marginBottom="110dp"
+
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ultimas_erupciones">
+                        </ListView>
+                        -->
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_below="@+id/titulo_table2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grisclaro55"
+                            android:layout_marginBottom="110dp"
+
+                            android:id="@+id/recycle">
+                        </android.support.v7.widget.RecyclerView>
+
+                        <RelativeLayout android:layout_width="match_parent"
+                                                    android:id="@+id/totop"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:textAlignment="center"
+                                                    android:layout_alignParentBottom="true"
+
+                                                    android:padding="0dp"
+                                                    android:layout_height="100dp">
+                                                    <RelativeLayout
+                                                        android:layout_width="match_parent"
+                                                        android:id="@+id/bloque0_p55"
+                                                        android:padding="0dp"
+                                                        android:gravity="center_horizontal"
+                                                        android:layout_centerVertical="true"
+                                                        android:layout_height="match_parent">
+                                                        <TextView
+                                                            android:layout_width="match_parent"
+                                                            android:text="@string/toup"
+                                                            android:textAlignment="center"
+                                                            android:textSize="40dp"
+                                                            android:textStyle="bold"
+                                                            android:layout_centerVertical="true"
+                                                            android:textColor="@color/blanco"
+                                                            android:id="@+id/texttoup"
+                                                            android:layout_height="match_parent"/>
+                                                    </RelativeLayout>
+                                                </RelativeLayout>
+
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/ty255"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/optionsvolcan"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/opt1"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:textAlignment="center">
+
+        <RelativeLayout
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gradient_buton"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:id="@+id/openslide"
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/iconoslidebackground"
+                android:gravity="center_vertical"
+                android:text="@string/toup"
+                android:textAlignment="center"
+                android:textColor="@color/igp"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="230dp"
+        android:id="@+id/mDrawerBlock"
+        android:layout_gravity="start"
+        android:background="@color/blanco"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/ty"
+            layout="@layout/list"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

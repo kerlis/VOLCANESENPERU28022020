@@ -1,0 +1,303 @@
+<resources>
+    <integer name="first_part_of_anim_duration">4000</integer>
+
+
+    <string name="settings_pathc"> M 118 101.438 L 520 101.438 L 520 179.438 L 118 179.438 Z</string>
+
+    <string name="settings_path">M 19.43 12.98 C 19.47 12.66 19.5 12.34 19.5 12 C 19.5 11.66 19.47 11.34 19.43 11.02 L 21.54 9.37 C 21.73 9.22 21.78 8.95 21.66 8.73 L 19.66 5.27 C 19.54 5.05 19.27 4.97 19.05 5.05 L 16.56 6.05 C 16.04 5.65 15.48 5.32 14.87 5.07 L 14.49 2.42 C 14.46 2.18 14.25 2 14 2 L 10 2 C 9.75 2 9.54 2.18 9.51 2.42 L 9.13 5.07 C 8.52 5.32 7.96 5.66 7.44 6.05 L 4.95 5.05 C 4.72 4.96 4.46 5.05 4.34 5.27 L 2.34 8.73 C 2.21 8.95 2.27 9.22 2.46 9.37 L 4.57 11.02 C 4.53 11.34 4.5 11.67 4.5 12 C 4.5 12.33 4.53 12.66 4.57 12.98 L 2.46 14.63 C 2.27 14.78 2.22 15.05 2.34 15.27 L 4.34 18.73 C 4.46 18.95 4.73 19.03 4.95 18.95 L 7.44 17.95 C 7.96 18.35 8.52 18.68 9.13 18.93 L 9.51 21.58 C 9.54 21.82 9.75 22 10 22 L 14 22 C 14.25 22 14.46 21.82 14.49 21.58 L 14.87 18.93 C 15.48 18.68 16.04 18.34 16.56 17.95 L 19.05 18.95 C 19.28 19.04 19.54 18.95 19.66 18.73 L 21.66 15.27 C 21.78 15.05 21.73 14.78 21.54 14.63 L 19.43 12.98 Z M 12 15.5 C 10.07 15.5 8.5 13.93 8.5 12 C 8.5 10.07 10.07 8.5 12 8.5 C 13.93 8.5 15.5 10.07 15.5 12 C 15.5 13.93 13.93 15.5 12 15.5 Z</string>
+
+
+
+    <string name="settings_path2">m96,120.4375c3,-1 399,2 399,1.5625c0,0.4375 1,96.4375 1,96c0,0.4375 -399,-3.5625 -399,-4c0,0.4375 -4,-92.5625 -1,-93.5625z</string>
+
+
+    <string name="tick_path">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>
+
+    <string name="cross_path">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
+
+
+
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+    <string name="default_notification_channel_name">default_notification_channel_name</string>
+    <string name="default_notification_channel_description" translatable="false">default_notification_channel_description</string>
+
+
+    <string name="default_notification_channel_id_lahar">default_channel_id_lahar</string>
+    <string name="default_notification_channel_name_lahar">default_channel_name_lahar</string>
+    <string name="channel_description_lahar" translatable="false">fcm_default_channel_lahar</string>
+
+
+
+
+
+
+
+
+    <string name="canal_sin_sonido_con_vibracion_id" >sin_sonido_con_vibracion_id</string>
+    <string name="canal_sin_sonido_con_vibracion_nombre" >canal_sin_sonido_con_vibracion_nombre</string>
+    <string name="canal_sin_sonido_con_vibracion_descripcion" translatable="false">canal_sin_sonido_con_vibracion_descripcion</string>
+
+
+    <string name="canal_sonido_alarmas_id" >canal_sonido_alarmas_id</string>
+    <string name="canal_sonido_alarmas_id_nombre" >canal_sonido_alarmas_id_nombre</string>
+    <string name="canal_sonido_alarmas_id_descripcion" translatable="false">canal_sonido_alarmas_id_descripcion</string>
+
+    <string name="canal_sonido_notificacion_id" >canal_sonido_notificacion_id</string>
+    <string name="canal_sonido_notificacion_nombre" >canal_sonido_notificacion_nombre</string>
+    <string name="canal_sonido_notificacion_descripcion" translatable="false">canal_sonido_notificacion_descripcion</string>
+
+    <string name="canal_sonido_personalizado_id" >canal_sonido_personalizado_id</string>
+    <string name="canal_sonido_personalizado_nombre" >canal_sonido_personalizado_nombre</string>
+    <string name="canal_sonido_personalizado__descripcion" translatable="false">canal_sonido_personalizado_descripcion</string>
+
+
+
+
+
+
+
+
+
+
+   <!--
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+ -->
+
+    <string name="channel_name" translatable="false">fcm_default_channel</string>
+    <string name="channel_description" translatable="false">fcm_default_channel</string>
+
+    <string name="open">Open Tab</string>
+    <string name="menu1">Menu Entry 1</string>
+    <string name="menu2">Menu Entry 2</string>
+    <string name="action">Action Button</string>
+    <string name="my_text">{0} You will need a {1} to complete this assembly</string>
+    <string name="text_sub0">1:</string>
+    <string name="text_sub1">screwdriver, hammer, and measuring tape</string>
+    <string name="app_name">Volcanes Perú</string>
+    <string name="PRIMERA_TEXT">Sismo con magnitud menor a 4.5</string>
+    <string name="SEGUNDA_TEXT">Sismo con magnitud entre 4.5 y 6.0</string>
+    <string name="TERCERA_TEXT">Sismo con magnitud mayor a 6.0</string>
+    <string name="FECHA_y_HORA_LOCAL_TEXT">Día, mes, año y hora de ocurrencia del sismo.</string>
+    <string name="MAGNITUD_TEXT">Para un sismo con magnitud menor a 6.0 se considera la escala de Magnitud Local
+    (ML) o Richter. Para sismos mayores, la escala magnitud momento (Mw).</string>
+    <string name="REFERENCIA_TEXT">Ubicación del epicentro del sismo con relación a la Plaza de Armas de la
+    ciudad/localidad más cercana.</string>
+    <string name="UBICACIÓN_TEXT">Coordenadas geográficas del epicentro.</string>
+    <string name="PROFUNDIDAD_TEXT">Profundidad del foco sísmico por debajo de la superficie.</string>
+    <string name="INTENSIDAD_TEXT">Intensidad de sacudimiento del suelo de acuerdo a la escala de Mercalli Modificada.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="reset_anim">Reset</string>
+    <string name="action_settings">Settings</string>
+    <string name="visualizar">&#xf06e;</string>
+    <string name="comparte">&#xf1e0;</string>
+    <string name="pdf">&#xf1c1;</string>
+    <string name="trayecto">&#xf277;</string>
+    <string name="planeta">&#xf0ac;</string>
+    <string name="mas">&#xf15c;</string>
+    <string name="trayectorias">&#xf279;</string>
+    <string name="localizacion">&#xf140;</string>
+    <string name="linea">&#xf2d1;</string>
+    <string name="diametro_icon">&#xf05e;</string>
+    <string name="altura_icon">&#xf07d;</string>
+    <string name="glaciares_icon">&#xf071;</string>
+    <string name="reporte">&#xf15c;</string>
+    <string name="temblor">&#xf000;</string>
+    <string name="filtro">&#xf0b0;</string>
+    <string name="mapasismico">&#xf279;</string>
+    <string name="alertas_icon">&#xf071;</string>
+    <string name="masdetalles">&#xf00e;</string>
+    <string name="descargar">&#xf019;</string>
+    <string name="iconomapa">&#xf041;</string>
+    <string name="iconolistado">&#xf03a;</string>
+    <string name="go">&#xf101;</string>
+    <string name="localizacion_icon">&#xf041;</string>
+    <string name="camara">&#xf1c8;</string>
+    <string name="time">&#xf017;</string>
+    <string name="pronostico">&#xf277;</string>
+    <string name="mapa_cenizas">&#xf1c8;</string>
+    <string name="detalles">&#xf15c;</string>
+    <string name="alerta">&#xf071;</string>
+    <!--lista de iconos por usar -->
+    <string name="info">&#xf05a;</string>
+    <string name="noticias">&#xf1ea;</string>
+    <string name="recientes">&#xf06a;</string>
+    <string name="mapa">&#xf278;</string>
+    <string name="hora">&#xf017;</string>>
+    <string name="ubicacion">&#xf08d;</string>
+    <string name="edificio">&#xf0f7;</string>
+    <string name="profundidad">&#xf0ab;</string>
+    <string name="distancia">&#xf0ac;</string>
+    <string name="picos">&#xf140;</string>
+    <string name="toup">&#xf102;</string>
+    <string name="descarga">&#xf0ed;</string>
+    <string name="tres">3000 m</string>
+    <string name="cinco">5000 m</string>
+    <string name="siete">7000 m</string>
+    <string name="titulo_volcanes">Volcanes Perú</string>
+    <string name="titulo_trayectorias">Trayectorias Referenciales</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_mapasdos">Mapasdos</string>
+    <string name="informacion">Información</string>
+    <string name="filtros">Filtros</string>
+    <string name="mapaajustes">Mapa Ajustes</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="convenciones">Convenciones</string>
+    <string name="compartir">Compartir</string>
+    <string name="negro"> Negro = Probablemente extinto.</string>
+    <string name="verde"> Verde = Poca actividad volcanica o volcan dormido.</string>
+    <string name="amarillo"> Amarillo = Algunas señales de actividad, pero no una erupcion cercana a futuro.</string>
+    <string name="naranja"> Naranaja = Actividad menor con peligro de erupció.n</string>
+    <string name="rojo"> Rojo = Incluye otros volcanes con cercana permanante actividad.</string>
+    <string name="blackred"> Rojo oscuro = Una actividad fuerte con arupción explosiva.</string>
+    <string name="amarillo_sismo"> Magnitud entre  4.5 y 6.0 .</string>
+    <string name="verde_sismo"> Magintud menor a 4.5 .</string>
+    <string name="rojo_sismo"> Magnitud mayor a 6.0 .</string>
+    <string name="primer_parrafo_info">
+        El Perú se encuentra ubicado en el Cinturón de Fuego del Pacífico, exactamente en el borde occidental de América del Sur. La compleja morfología del territorio peruano es producto de la colisión de las placas de Nazca (oceánica) y Sudamericana (continental), la misma que da origen a la continua ocurrencia de sismos, deformación cortical y a la formación de volcanes, estos últimos en las regiones de Ayacucho, Arequipa, Moquegua y Tacna.
+    </string>
+    <string name="segundo_parrafo_info">
+        El aplicativo “Volcanes Perú” ha sido creado para conocer las características de los principales volcanes activos presentes en la región sur del Perú. La información contenida en este aplicativo es continuamente actualizada a fin de que el usuario cuente con las herramientas adecuadas para la correcta Gestión del Riesgo de Desastres (GRD) por posibles erupciones volcánicas.
+    </string>
+    <string name="tercer_parrafo_info">
+    La base de información referente del aplicativo puede ser encontrada en nuestra página web: http://​portal.igp.gob.pe/ Los datos​ son​ continuamente actualizados ​y​ están ​a disposición del público en general.
+    </string>
+    <string name="Caracteristicas_1">
+        * Listado completo de volcanes en estudio, ordenados geográficamente y de acuerdo al nivel de riesgo relativo que representan.
+    </string>
+    <string name="caracteristicas_2">
+        * Mapa de distribución espacial de los volcanes correctamente georreferenciados.
+    </string>
+    <string name="caracteristicas_3">
+        * Situación geodinámica actual de los principales volcanes de la región sur del Perú.
+    </string>
+    <string name="caracteristicas_4">
+        * Últimos movimientos sísmicos generados como consecuencia de la actividad volcánica.
+    </string>
+    <string name="caracteristicas_5">
+        * Notificaciones y/o alertas por reactivación de volcanes activos y cambios en las alertas de acuerdo a la evolución del riesgo volcánico.
+    </string>
+    <string name="caracteristicas_6">
+        * Notificaciones y alertas por emisión y caída de cenizas, así como Lahares.
+    </string>
+    <string name="caracteristicas_7">
+       *  Situación de los pronósticos de dispersión de cenizas (SENAMHI).
+    </string>
+    <string name="caracteristicas_8">
+       * Seguimiento de la actividad volcánica en tiempo real usando información proveniente de cámaras digitales.
+    </string>
+    <string name="caracteristicas_10">
+       * Glosario de términos.
+    </string>
+    <string name="caracteristicas_9">
+       Esperamos que esta información sea de utilidad para la correcta gestión del riesgo volcánico en nuestro país.
+    </string>
+    <string name="refrescar_r">
+       Volcanes
+    </string>
+    <string name="informacion_r">
+       Acerca de
+    </string>
+    <string name="mapasismicovolcanes_r">
+       Mapa sísmico
+    </string>
+    <string name="listadosismico_r">
+       Sismos recientes
+    </string>
+    <string name="Notificaciones_r">
+       Configuraciones
+    </string>
+    <string name="Convenciones_r">
+       Glosario
+    </string>
+    <string name="Compartir_r">
+       Compartir
+    </string>
+    <string-array name="cantidades">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+    <string name="style_json">
+      [
+         {
+            "featureType": "poi.business",
+            "elementType": "labels",
+            "stylers": [{
+            "visibility": "off"
+            }]
+         },
+
+
+        {
+            "featureType": "poi.government",
+            "elementType": "labels",
+            "stylers": [{
+            "visibility": "off"
+            }]
+        },
+
+
+        {
+            "featureType": "poi.medical",
+            "elementType": "labels",
+            "stylers": [{
+            "visibility": "off"
+                }]
+        }
+      ]
+      </string>
+
+
+    <string name="style_json2">
+    [
+    {
+    \"featureType\": \"poi.medical\",
+    \"elementType\": \"all\",
+    \"stylers\": [
+    {
+    \"visibility\": \"off\"
+    }
+    ]
+    }
+    ]
+</string>
+
+    <string name="vermas"><u>Leer más</u>.</string>
+    <string name="title_activity_recordvideo">Recordvideo</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="100"
+        android:title="@string/refrescar_r"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/informacion"
+        android:orderInCategory="100"
+        android:title="@string/informacion_r"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/listadosismico"
+        android:orderInCategory="100"
+        android:title="@string/listadosismico_r"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/notificaciones"
+        android:orderInCategory="100"
+        android:title="@string/Notificaciones_r"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/convenciones"
+        android:orderInCategory="100"
+        android:title="@string/Convenciones_r"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_websearch"
+        android:title="@string/action_websearch"
+        android:showAsAction="ifRoom|withText"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>
+    </title>
+</head>
+<body style="background-color: #0000ffff;">
+<style>
+        .toggle_box .toggle_check:checked,
+        .toggle_box .toggled{
+            display:none;
+        }
+        .toggle_box .toggle_check:checked ~ .toggled{
+            display:block;
+        }
+        .toggle_box .toggler{
+            cursor: pointer;
+        }
+
+        .menu{
+        background-color:blue;
+        }
+
+        .tableclase2{
+        	background-color: #1C2F59;
+        	width: 190px;
+        }
+
+
+        .tableclase{
+        	background-color: #1C2F59;
+        	width: 190px;
+        }
+
+
+        .clasetexto{
+        	color:white;
+        	font-family: arial;
+        	font-size: 12px;
+        	padding: 5px;
+          }
+          .bodercontainer{
+          	border-bottom: solid 1px #21BFF6;
+          }
+          .distancia{
+          	margin-left: 5px;
+          	font-weight: bold;
+          	font-size: 13px;
+
+          }
+           .distancia2{
+          	margin-left: 5px;
+          	font-weight: bold;
+          	font-size: 20px;
+          	margin-top: -10px;
+
+          }
+
+                 br {
+            content: "";
+            margin: 1.5em;
+            display: block;
+            margin-bottom: -15px;
+        }
+
+        .leyenda{
+        	background-color: #1C2F59;
+        	color: white;
+        	    	font-family: arial;
+        	font-size: 12px;
+        	        	padding: 5px;
+
+        }
+
+
+    </style>
+<div class="toggle_box" style="width: 190px;" >
+
+    <input id="toggle_check_1" type="checkbox" class="toggle_check" checked hidden />
+
+    <div  >
+
+        <label class="toggler leyenda" for="toggle_check_1">Octubre-diciembre de 2017</label><br>
+
+        <label class="toggler leyenda" for="toggle_check_1">Leyenda</label>
+    </div>
+
+    <div class="toggled">
+        <table class="tableclase" style="margin-top: 8px;">
+            <tr>
+                <td><div class="bodercontainer"><span class="clasetexto">volcan<span></div></td>
+                <td><span class="distancia2" style="color:#fbf800;">*</span></td>
+            </tr>
+            <tr>
+                <td><div class="bodercontainer"><span class="clasetexto">estacion<span></div></td>
+                <td><span  class="distancia" style="color:#19aeff;">&#9650;</span></td>
+            </tr>
+            <tr>
+                <td><div class="bodercontainer"><span class="clasetexto">centro poblado<span></div></td>
+                <td><span  class="distancia" style="color:#54df00;">&#9632;</span></td>
+            </tr>
+            <tr>
+                <td><div class="bodercontainer"><span class="clasetexto">sismos<span></div></td>
+                <td><span  class="distancia" style="color:#ff0000;">&#11044;</td></span>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

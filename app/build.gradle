@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    compileOptions.encoding "UTF-8"
+    defaultConfig {
+        applicationId "peru.volcanes.volcanesper"
+        minSdkVersion 16
+        //  targetSdkVersion 28
+        versionCode 83
+        versionName "8.4"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        targetSdkVersion 28
+        useLibrary 'org.apache.http.legacy'
+
+    }
+    dexOptions {
+        //incremental truef
+        javaMaxHeapSize "4G"
+
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+        }
+    }
+    externalNativeBuild {
+
+            //   path file('CMakeLists.txt')
+
+          //  path file('src/main/java/peru/volcanes/volcanesper/CMakeLists.txt')
+            // version "3.10.2"
+
+       // }
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.firebaseui:firebase-ui:1.1.1'
+    implementation 'com.firebase:firebase-client-android:2.5.2+'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    // testCompile 'junit:junit:4.12'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.gjiazhe:PanoramaImageView:1.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.4.4'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //  implementation 'com.android.support.constraint:constraintcompile-layout:1.0.0-beta4'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //implementation 'com.google.android.gms:play-services-maps:11.4.0'
+    // implementation 'com.google.android.gms:play-services-location:11.4.0'
+
+
+    implementation 'com.google.firebase:firebase-database:15.0.1'
+
+    implementation 'com.google.firebase:firebase-messaging:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+
+
+
+
+    //implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation "com.google.firebase:firebase-core:${rootProject.ext.firebaseCore}"
+    implementation "com.google.firebase:firebase-messaging:${rootProject.ext.firebaseMessaging}"
+    //implementation 'com.google.android.play:core:1.5.0'
+    // implementation 'com.android.support:appcompat-v7:24.2.0'
+    //  implementation 'com.android.support:design:24.2.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+
+    def work_version = "1.0.1"
+
+    // (Java only)
+    implementation "android.arch.work:work-runtime:$work_version"
+
+    // Kotlin + coroutines
+    implementation "android.arch.work:work-runtime-ktx:$work_version"
+
+    // optional - RxJava2 support
+    implementation "android.arch.work:work-rxjava2:$work_version"
+    // optional - Test helpers
+    androidTestImplementation "android.arch.work:work-testing:$work_version"
+
+}
+apply plugin: 'com.google.gms.google-services'

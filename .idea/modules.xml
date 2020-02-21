@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/VOLCANESENPERU.iml" filepath="$PROJECT_DIR$/VOLCANESENPERU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VOLCANESENPERU11102019-master.iml" filepath="$PROJECT_DIR$/.idea/VOLCANESENPERU11102019-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VOLCANESENPERU11102019-master22-master.iml" filepath="$PROJECT_DIR$/VOLCANESENPERU11102019-master22-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/VOLCANESENPERU11102019-master22-master-app.iml" filepath="$PROJECT_DIR$/app/VOLCANESENPERU11102019-master22-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VOLCANESENPERU11102019-master22-master77777-master.iml" filepath="$PROJECT_DIR$/.idea/VOLCANESENPERU11102019-master22-master77777-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VOLCANESENPERU11102019-master22-master77777-master070516102019-master.iml" filepath="$PROJECT_DIR$/VOLCANESENPERU11102019-master22-master77777-master070516102019-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/VOLCANESENPERU11102019-master22-master77777-master070516102019-master-app.iml" filepath="$PROJECT_DIR$/app/VOLCANESENPERU11102019-master22-master77777-master070516102019-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VOLCANESENPERU23122019-master.iml" filepath="$PROJECT_DIR$/VOLCANESENPERU23122019-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/VOLCANESENPERU23122019-master-app.iml" filepath="$PROJECT_DIR$/app/VOLCANESENPERU23122019-master-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

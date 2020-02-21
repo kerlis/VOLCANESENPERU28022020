@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="80dp"
+    android:layout_width="fill_parent"
+    android:paddingBottom="7dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp"
+    android:paddingTop="7dp" >
+    <RelativeLayout android:layout_width="wrap_content"
+        android:id="@+id/contenedoriconoreporte"
+        android:padding="3dp"
+        android:layout_marginRight="7dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/orangeyellow"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="28sp"
+            android:id="@+id/alerta"
+            android:text="@string/alertas_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/contenedoriconoreporte"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#000"
+                android:id="@+id/evento"
+                android:layout_width="wrap_content"
+                style="@style/datoubicacionlistview">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_below="@+id/evento"
+                android:textColor="#000"
+                android:id="@+id/fecha_hora"
+                android:layout_width="wrap_content"
+                style="@style/fechareporte" >
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:layout_alignParentRight="true">
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/fondoiconoreportes3"
+            android:id="@+id/bb7"
+            android:layout_toStartOf="@+id/b6"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp">
+            <TextView  android:layout_width="wrap_content"
+                android:id="@+id/visualizar"
+                android:layout_height="wrap_content"
+                style="@style/iconoreportesestilo"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/visualizar"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fondoiconoreportes2"
+            android:id="@+id/b6"
+             android:layout_centerVertical="true"
+            android:layout_height="30dp">
+            <TextView  android:layout_width="wrap_content"
+                android:id="@+id/compartir"
+                android:layout_height="wrap_content"
+                style="@style/iconoreportesestilo"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="@string/comparte"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true">
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:visibility="gone"
+             android:background="@drawable/fondoiconoreportes"
+            android:id="@+id/b5"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp">
+            <TextView  android:layout_width="wrap_content"
+                android:id="@+id/descargar"
+                android:layout_height="wrap_content"
+                style="@style/iconoreportesestilo"
+                android:text="@string/descargar"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true">
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

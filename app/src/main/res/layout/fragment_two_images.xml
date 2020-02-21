@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgMain"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgSecondary"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+<!--
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+        -->
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/plomo_clarito2"
+            android:id="@+id/leyendacontainer">
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_toStartOf="@+id/bloque2"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leyenda1"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="11dp"
+                    android:textColor="@color/igp"
+                    android:text="Volcán">
+                </TextView>
+                <RelativeLayout android:layout_width="3dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/blancos"
+                    android:layout_height="match_parent">
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="100dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/bloque2"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leyenda2"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/igp"
+                    android:text="Nivel de Riesgo Relativo">
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <ListView
+            android:id="@+id/listado_volcanes"
+            android:layout_below="@+id/leyendacontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="240dp"
+    android:background="@drawable/infowindowbackground"
+     android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="210dp"
+        android:padding="0dp"
+          android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TableRow
+            android:layout_width="210dp"
+            android:layout_height="match_parent" >
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/titulo"
+                style="@style/estilocontenedor"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sec3">
+                    <TextView
+                        android:id="@+id/nombre"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="250dp"
+            android:background="@drawable/fondoline"
+            android:layout_height="match_parent" >
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    style="@style/estilocontenedor"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/altura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="250dp"
+            android:background="@drawable/fondoline"
+            android:layout_height="match_parent" >
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    style="@style/estilocontenedor"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:id="@+id/kilometros"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </TableRow>
+        <TableRow>
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content" >
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:visibility="gone"
+                        android:id="@+id/imagen"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="24dp" />
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gogo"
+                        android:layout_alignParentRight="true"
+                         android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="@string/go">
+                        </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

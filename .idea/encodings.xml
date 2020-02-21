@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logo.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logonuevo2019launche.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logonuevoceleste.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logonuevoclasico.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/sarasaracircle2.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/alarmasonido.mp3" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/beep2.mp3" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/raw/mapa.kml" charset="ISO-8859-1" />
+  </component>
+</project>

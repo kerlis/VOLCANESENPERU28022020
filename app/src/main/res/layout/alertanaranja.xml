@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="60dp"
+
+    android:layout_marginBottom="0dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+     >
+
+
+        <RelativeLayout
+            android:id="@+id/encabezado"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+
+            android:background="@drawable/backgroundnaranja"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/texto"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24dp"
+                android:textStyle="bold"
+
+
+                android:text="#EnErupción"
+                android:textColor="@color/blanco" />
+
+
+        </RelativeLayout>
+
+        <!--
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="#EnErupción"/>
+
+        </RelativeLayout>
+-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/encabezado"
+            android:background="@drawable/background_azul">
+
+            <RelativeLayout
+                android:id="@+id/bloque1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+
+                <Button
+                    android:id="@+id/volcan_estado1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/nombre1"
+                    android:background="@drawable/icono_alertanaranja"
+                    android:textSize="8dp" />
+
+
+                <TextView
+                    android:id="@+id/nombre1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/centro"
+                    android:gravity="center_vertical"
+                    android:text="SABANCAYA"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/centro"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:text="" />
+
+
+                <Button
+                    android:id="@+id/icono1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/centro"
+                    android:background="@drawable/botoncam"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/icono2"
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icono1"
+                    android:background="@drawable/botonsismograma"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/icono3"
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icono2"
+                    android:background="@drawable/botonreporte"
+                    android:textSize="8dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lineablanca"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/bloque1"
+                android:layout_marginLeft="30dp"
+
+                android:layout_marginRight="30dp"
+                android:background="@color/blanco"></RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bloque2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/lineablanca">
+
+
+                <Button
+                    android:id="@+id/volcan_estado2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/nombre1"
+                    android:background="@drawable/icono_alertanaranja"
+                    android:textSize="8dp" />
+
+
+                <TextView
+                    android:id="@+id/nombre1"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/centro"
+                    android:gravity="center_vertical"
+                    android:text="UBINAS           "
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/centro"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:text="" />
+
+
+                <Button
+                    android:id="@+id/icono4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/centro"
+                    android:background="@drawable/botoncam"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/icono5"
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icono4"
+                    android:background="@drawable/botonsismograma"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/icono6"
+                    android:layout_width="40dp"
+
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/icono5"
+                    android:background="@drawable/botonreporte"
+                    android:textSize="8dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cerrar"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_below="@id/bloque2">
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_centerHorizontal="true"
+                     android:layout_width="wrap_content"
+
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/encabezado2"
+                    android:textColor="@color/blanco"
+                    android:background="@drawable/botonclosebackground"
+                    android:text="cerrar" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

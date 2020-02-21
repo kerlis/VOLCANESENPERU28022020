@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <!--8C8C8C
+            <solid android:color="#BABABA" />
+-->
+            <solid android:color="@color/plomo_clarito2" />
+            <corners android:radius="9dp" />
+
+        </shape>
+    </item>
+
+    <item
+        android:left="1dp"
+
+        android:right="1dp"
+
+        android:top="0dp"
+        android:bottom="3dp">
+
+        <shape>
+
+            <solid android:color="@color/plomo_clarito2" />
+        </shape>
+
+    </item>
+
+</layer-list>

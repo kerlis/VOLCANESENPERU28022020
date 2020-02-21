@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/content_sismosvolcan"
+        android:layout_width="match_parent"
+        android:background="@color/blanco"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.erlis.volcanperu.MainActivity">
+
+        <RelativeLayout
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/encabezado"
+            android:background="@drawable/encabezadobackground">
+
+            <RelativeLayout android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/imagen3">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/sliderz"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/volcan_amarillo_sm"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:id="@+id/imagen1">
+                <ImageView
+                    android:src="@drawable/logoigp"
+                    android:id="@+id/logoigp"
+                    style="@style/logoigp_normal_port2"
+                    android:layout_height="75dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center|center_vertical"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/titulo_layer_text"
+                android:textColor="@color/black_v"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="VOLCANES PERÚ"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contenedor"
+            android:layout_below="@id/encabezado">
+            <FrameLayout
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+            </FrameLayout>
+            <Button
+                android:layout_width="80dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/satelite"
+                android:text="HIBRIDO"
+                android:textSize="14dp"
+                android:textColor="@color/blanco"
+                android:layout_height="30dp"
+                android:background="@color/transparente">
+            </Button>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="90dp"
+                android:textColor="@color/blanco"
+                android:id="@+id/terreno"
+                android:textSize="14dp"
+                android:text="TERRENO"
+                android:layout_height="30dp"
+                android:background="@color/transparente">
+            </Button>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="200dp"
+                android:textColor="@color/blanco"
+                android:id="@+id/localizacion"
+                android:textSize="17dp"
+                android:text="@string/localizacion"
+                android:layout_height="30dp"
+                android:background="@color/transparente">
+            </Button>
+
+            <RelativeLayout android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:background="@color/transparente"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/opciones"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="1dp">
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content" >
+
+
+                        <!--  bloque 1-->
+
+                        <LinearLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/bloque1"
+                                android:paddingLeft="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingRight="0dp"
+                                android:paddingTop="0dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/bloque1btn"
+                                    android:layout_height="match_parent"
+                                    android:textAlignment="center"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal"
+                                    android:paddingTop="16dp"
+                                    android:paddingBottom="19dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentStart="true">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        style="@style/leyenda_nivel"
+                                        android:textAlignment="center"
+                                        android:id="@+id/niveldealerta" >
+                                    </TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- end  bloque 1-->
+
+
+                        <!--  bloque 2-->
+
+                        <LinearLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_toEndOf="@+id/bloque1"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="0dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingRight="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:id="@+id/bloque2"
+                                android:paddingTop="0dp">
+                                <LinearLayout
+                                    android:paddingTop="11dp"
+                                    android:paddingBottom="11dp"
+                                    android:paddingLeft="0dp"
+                                    android:paddingRight="0dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+                                    <ImageView
+                                        style="@style/alertaicono"
+                                        android:id="@+id/alertaverdeicono"
+                                        android:src="@drawable/volcan_verde_sm">
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_below="@+id/alertaverdeicono"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="verde"
+                                        android:gravity="center_horizontal"
+                                        style="@style/leyenda_volcan"
+                                        android:id="@+id/texto_alerta_1">
+                                    </TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- end  bloque 2-->
+
+                        <!--  bloque 3-->
+                        <LinearLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_toEndOf="@+id/bloque2"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="0dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingRight="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:id="@+id/bloque3"
+                                android:paddingTop="0dp">
+                                <LinearLayout
+                                    android:paddingTop="11dp"
+                                    android:paddingBottom="11dp"
+                                    android:paddingLeft="9dp"
+                                    android:paddingRight="9dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+                                    <ImageView
+                                        style="@style/alertaicono"
+                                        android:id="@+id/alertamarillaicono"
+                                        android:src="@drawable/volcan_verde_sm">
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_below="@+id/trayectoria_cenizas"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="amarilla"
+                                        style="@style/leyenda_volcan"
+                                        android:id="@+id/texto_alerta_2">
+                                    </TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- end bloque 3-->
+
+
+                        <!--  bloque 4-->
+                        <LinearLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_toEndOf="@+id/bloque3"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="0dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingRight="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:id="@+id/bloque4"
+                                android:paddingTop="0dp">
+                                <LinearLayout
+                                    android:paddingTop="11dp"
+                                    android:paddingBottom="11dp"
+                                    android:paddingLeft="9dp"
+                                    android:paddingRight="9dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+                                    <ImageView
+                                        style="@style/alertaicono"
+                                        android:id="@+id/alertanaranjaicono"
+                                        android:src="@drawable/volcan_naranja_sm">
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_below="@+id/alertanaranjaicono"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="naranja"
+                                        style="@style/leyenda_volcan"
+                                        android:id="@+id/texto_alerta_3">
+                                    </TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- end bloque 4-->
+
+                        <!--  bloque 5-->
+                        <LinearLayout android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1">
+                            <RelativeLayout
+                                android:layout_toEndOf="@+id/bloque4"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="0dp"
+                                android:gravity="center"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:paddingRight="0dp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:id="@+id/bloque5"
+                                android:paddingTop="0dp">
+                                <LinearLayout
+                                    android:paddingTop="11dp"
+                                    android:paddingBottom="11dp"
+                                    android:paddingLeft="9dp"
+                                    android:paddingRight="9dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAlignment="center"
+                                    android:orientation="vertical"
+                                    android:gravity="center_horizontal">
+                                    <ImageView
+                                        style="@style/alertaicono"
+                                        android:id="@+id/alertaroja"
+                                        android:src="@drawable/volcan_amarillo_sm">
+                                    </ImageView>
+                                    <TextView
+                                        android:layout_below="@+id/alertaroja"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:text="roja"
+                                        style="@style/leyenda_volcan"
+                                        android:id="@+id/texto_alerta_4">
+                                    </TextView>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- end bloque 5-->
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="230dp"
+        android:id="@+id/mDrawerBlock"
+        android:layout_gravity="start"
+        android:background="@color/blanco"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/ty"
+            layout="@layout/list" />
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+android:interpolator="@android:anim/accelerate_interpolator"
+android:ordering="sequentially"
+    android:repeatMode="restart"
+
+
+    android:startOffset="@integer/first_part_of_anim_duration"
+
+
+
+    android:repeatCount="infinite"
+ >
+
+
+<!--
+<objectAnimator
+    android:duration="@android:integer/config_shortAnimTime"
+    android:propertyName="pathData"
+    android:valueFrom="M6,11 l0,0 l0,0"
+    android:valueTo="M6,11 l3.5,4 l0,0"
+    android:valueType="pathType" />
+
+<objectAnimator
+    android:duration="@android:integer/config_shortAnimTime"
+    android:propertyName="pathData"
+    android:valueFrom="M6,11 l3.5,4 l0,0"
+    android:valueTo="M6,11 l3.5,4 l8,-7"
+    android:valueType="pathType" />
+-->
+
+    <objectAnimator
+        android:propertyName="pathData"
+        android:startOffset="@integer/first_part_of_anim_duration"
+
+        android:duration="@integer/first_part_of_anim_duration"
+
+        android:repeatMode="reverse"
+        android:repeatCount="2"
+
+
+        android:valueFrom="M6,0 l0,0"
+         android:valueTo="M6,0 l16,0"
+
+        android:valueType="pathType" />
+
+
+    <objectAnimator
+        android:duration="@integer/first_part_of_anim_duration"
+        android:startOffset="@integer/first_part_of_anim_duration"
+
+        android:propertyName="pathData"
+        android:repeatMode="reverse"
+        android:repeatCount="2"
+
+        android:valueFrom="M16,0 l0,0"
+
+         android:valueTo="M16,0 l0,15"
+
+        android:valueType="pathType" />
+
+
+
+
+
+
+
+</set>

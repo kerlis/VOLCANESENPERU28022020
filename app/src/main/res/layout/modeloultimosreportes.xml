@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:padding="2dp">
+    <RelativeLayout
+        android:layout_height="110dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/contenedor"
+        android:paddingLeft="0dp"
+        android:background="@drawable/encabezadobackground"
+        android:paddingRight="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout android:layout_width="90dp"
+            android:id="@+id/imagenvolcan"
+            android:padding="2dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:id="@+id/foto"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/titulo"
+            android:layout_toRightOf="@+id/imagenvolcan"
+            android:id="@+id/blocke1">
+            <TextView
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:id="@+id/volcan"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                style="@style/textolistadovolcanes25">
+            </TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/volcan"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:id="@+id/tipo"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                style="@style/textolistadovolcanes2">
+            </TextView>
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tipo"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:id="@+id/fecha"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                style="@style/textolistadovolcanes2fecha">
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/asignacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/magnitudiconodato2"
+                android:layout_alignParentRight="true"
+                android:gravity="center|center_vertical"
+                android:layout_centerVertical="true"
+                android:text="asi"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

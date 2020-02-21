@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Animationvolcanes">
+
+
+
+    <!--
+        <objectAnimator
+            android:propertyName="pathData"
+            android:duration="1000"
+            android:valueFrom="path value"
+            android:valueTo="some value"
+            android:valueType="pathType"
+            android:repeatMode="restart"
+            android:repeatCount="infinite"
+            android:src="@drawable/carrito"
+            android:id="@+id/cuadrado"
+
+            android:interpor="@android:anim/overshoot_interpolator"/>
+
+      -->
+        <ImageView
+            android:layout_width="150dp"
+            android:id="@+id/cuadrado"
+            android:src="@drawable/carrito"
+            android:repeatCount="infinite"
+
+            android:layout_height="150dp" />
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/boton"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"  />
+
+
+
+
+</RelativeLayout>
