@@ -1,7 +1,15 @@
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
 
 <!--
+
+        <item name="colorPrimaryDark">@color/bluecap1</item>
+
+
+
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="drawerArrowStyle">@style/DrawerIconStyle</item>
         <item name="colorPrimary">@color/blanco</item>
@@ -447,6 +455,18 @@
         <item name="android:layout_marginLeft">4dp</item>
         <item name="android:layout_marginRight">4dp</item>
     </style>
+
+
+    <style name="iconosmultimedia">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
 
 
     <style name="iconoreportesestilolarge">

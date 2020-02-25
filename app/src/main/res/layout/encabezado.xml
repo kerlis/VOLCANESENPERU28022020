@@ -40,6 +40,8 @@
             android:layout_centerVertical="true"
             android:gravity="center|center_vertical"
             android:src="@drawable/logonuevoclasico" />
+
+
     </RelativeLayout>
 
     <TextView

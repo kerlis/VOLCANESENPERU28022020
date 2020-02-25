@@ -1,4 +1,5 @@
 package peru.volcanes.volcanesper;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
@@ -44,12 +45,12 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
     RelativeLayout blocke5a;
     RelativeLayout blocke9;
     RelativeLayout blocke6a;
-    TextView compartir;
+    TextView compartir,compartir2;
     RelativeLayout compartirfile;
     ImageView estado_volcan;
     String dato;
     RelativeLayout blocke12;
-    RelativeLayout blocke92;
+    RelativeLayout blocke92,b7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
         setContentView(R.layout.activity_ultimanotificacionlahardatos);
 
 
+        b7   = (RelativeLayout) findViewById(R.id.b7);
         compartirfile= (RelativeLayout) findViewById(R.id.b6);
         blocke1a = (RelativeLayout) findViewById(R.id.blocke1);
         blocke2a = (RelativeLayout) findViewById(R.id.blocke2);
@@ -190,8 +192,11 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
 
 
         compartir = (TextView) findViewById(R.id.compartir);
+        compartir2 = (TextView) findViewById(R.id.compartir2);
+
         Typeface fontAwesomeFont = Typeface.createFromAsset(getAssets(), "fontawesome-webfont.ttf");
         compartir.setTypeface(fontAwesomeFont);
+        compartir2.setTypeface(fontAwesomeFont);
 
 
         String va =  String.valueOf(volcan_dat);
@@ -353,6 +358,29 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
                 startActivity(Intent.createChooser(sharingIntent, "Share using"));
             }
         });
+
+
+
+
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Ultimanotificacionlahardatos.this,Videomapa.class);
+                i.putExtra("TIPODENOTIFICACION",tipodenotificacion_dat);
+                 i.putExtra("TIPODEEVENTO",tipodeevento_dat);
+                i.putExtra("FECHA",fecha_dat);
+                i.putExtra("HORA",hora_dat);
+                i.putExtra("HORAUTC",horautc_dat);
+                i.putExtra("OBSERVACIONES",observacicones_dat);
+                i.putExtra("SIMULACRO",simulacro_dat);
+                i.putExtra("VOLCAN",volcan_dat);
+
+                Ultimanotificacionlahardatos.this.startActivity(i);
+            }
+        });
+
+
+
 
 
 

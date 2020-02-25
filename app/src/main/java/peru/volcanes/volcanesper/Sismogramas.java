@@ -174,13 +174,6 @@ public class Sismogramas extends FragmentActivity  implements ActivityCompat.OnR
          sismogramaurls = i.getExtras().getString("SISMOGRAMA");
          mapasismico = i.getExtras().getString("MAPASISMICO");
 
-       ///  proyecionsenahmi = i.getExtras().getString("PROYECCIONSENAHMI");
-
-       //  listado = (FrameLayout) findViewById(R.id.listado);
-        // listado.bringToFront();
-
-       //  texto = (TextView) findViewById(R.id.texto);
-      //   texto.setText("Registro sísmico del volcán " +  nombre_text + ", el cual muestra los eventos registrados en tiempo real por las estaciones de vigilancia permanente del IGP.");
 
          proyeccionsenamhiurl = i.getExtras().getString("PROYECCIONSENAHMI");
 
@@ -200,8 +193,7 @@ public class Sismogramas extends FragmentActivity  implements ActivityCompat.OnR
           mapasismic_menu = (LinearLayout) findViewById(R.id.opciones8);
 
            val = String.valueOf(codigo_text);
-
-       int valw = View.VISIBLE;
+           int valw = View.VISIBLE;
 
 
 
@@ -213,178 +205,6 @@ public class Sismogramas extends FragmentActivity  implements ActivityCompat.OnR
 
 
 
-/*
-         if (val.equals("1493157379002")){
-             opciones72.setVisibility(View.VISIBLE);
-             pronostico_menu2.setVisibility(View.VISIBLE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.VISIBLE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1493157381161")){
-             opciones72.setVisibility(View.VISIBLE);
-             pronostico_menu2.setVisibility(View.VISIBLE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.VISIBLE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506454510537")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455245814")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455248101")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.GONE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455249661")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455251429")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.GONE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455253382")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455254838")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455256229")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455257749")){
-             opciones72.setVisibility(View.VISIBLE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455257753")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455257755")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.GONE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455257757")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.GONE);
-             reportes_menu.setVisibility(View.GONE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.GONE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455259126")){
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else if(val.equals("1506455259128")){
-             opciones72.setVisibility(View.VISIBLE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.GONE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         else{
-             opciones72.setVisibility(View.GONE);
-             pronostico_menu2.setVisibility(View.GONE);
-             pronostico_menu.setVisibility(View.GONE);
-             sismogramas_menu.setVisibility(View.VISIBLE);
-             reportes_menu.setVisibility(View.VISIBLE);
-             alertas_menu.setVisibility(View.VISIBLE);
-             camara_menu.setVisibility(View.VISIBLE);
-             mapasismic_menu.setVisibility(View.GONE);
-         }
-         */
 
      /*--------VISUALIZACION DE MENU----------*/
 
@@ -1232,20 +1052,20 @@ public class Sismogramas extends FragmentActivity  implements ActivityCompat.OnR
         editor.putString("menu6", sreporte.getMenu6());
         editor.putString("menu7", sreporte.getMenu7());
         editor.putString("menu8", sreporte.getMenu8());
-         editor.apply();
+        editor.apply();
         mostrar_menu();
     }
 
     private void mostrar_menu() {
         SharedPreferences prefs = getSharedPreferences("ultsismo", Context.MODE_PRIVATE);
-         menu1 = prefs.getString("menu1", "");
-         menu2 = prefs.getString("menu2", "");
-         menu3 = prefs.getString("menu3", "");
-         menu4 = prefs.getString("menu4", "");
-         menu5 = prefs.getString("menu5", "");
-         menu6 = prefs.getString("menu6", "");
-         menu7 = prefs.getString("menu7", "");
-         menu8 = prefs.getString("menu8", "");
+        menu1 = prefs.getString("menu1", "");
+        menu2 = prefs.getString("menu2", "");
+        menu3 = prefs.getString("menu3", "");
+        menu4 = prefs.getString("menu4", "");
+        menu5 = prefs.getString("menu5", "");
+        menu6 = prefs.getString("menu6", "");
+        menu7 = prefs.getString("menu7", "");
+        menu8 = prefs.getString("menu8", "");
 
         if(menu1.equals("VISIBLE")){
             opciones72.setVisibility(View.VISIBLE);
