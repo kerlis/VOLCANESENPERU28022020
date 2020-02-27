@@ -39,7 +39,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:gravity="center|center_vertical"
-            android:src="@drawable/logonuevoclasico" />
+            android:src="@drawable/logo2020" />
 
 
     </RelativeLayout>

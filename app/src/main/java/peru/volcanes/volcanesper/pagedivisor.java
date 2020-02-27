@@ -310,15 +310,15 @@ public class pagedivisor extends AppCompatActivity {
             public void onPageSelected(int pageNumber) {
                 if(pageNumber == 0){
                     cell1border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-                    cell2border.setBackgroundColor(getResources().getColor(R.color.igp));
+                    cell2border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
                 }
                 else if(pageNumber == 1) {
                     cell2border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-                    cell1border.setBackgroundColor(getResources().getColor(R.color.igp));
+                    cell1border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
                 }
                 else{
                     cell2border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-                    cell1border.setBackgroundColor(getResources().getColor(R.color.igp));
+                    cell1border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
                 }
             }
 
@@ -334,22 +334,22 @@ public class pagedivisor extends AppCompatActivity {
 
         if(vpPager.getCurrentItem() == 0) {
             cell1border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-            cell2border.setBackgroundColor(getResources().getColor(R.color.igp));
+            cell2border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
         }
         else if(vpPager.getCurrentItem() == 1) {
             cell2border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-            cell1border.setBackgroundColor(getResources().getColor(R.color.igp));
+            cell1border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
         }
         else{
             cell2border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
-            cell1border.setBackgroundColor(getResources().getColor(R.color.igp));
+            cell1border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
         }
 
         celda2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View arg0) {
                 vpPager.setCurrentItem(1, true);
-                cell1border.setBackgroundColor(getResources().getColor(R.color.igp));
+                cell1border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
                 cell2border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
                 imagen3.setVisibility(View.GONE);
 
@@ -360,7 +360,7 @@ public class pagedivisor extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 vpPager.setCurrentItem(0, true);
-                cell2border.setBackgroundColor(getResources().getColor(R.color.igp));
+                cell2border.setBackgroundColor(getResources().getColor(R.color.bluecap1));
                 cell1border.setBackgroundColor(getResources().getColor(R.color.celesteigp));
 
                 imagen3.setVisibility(View.VISIBLE);

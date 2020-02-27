@@ -54,17 +54,36 @@
                     layout="@layout/encabezado"/>
             </RelativeLayout>
         </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:layout_below="@+id/encabezado2"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content">
+
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+        </android.support.v4.view.ViewPager>
         <TableLayout
             android:layout_width="match_parent"
             android:id="@+id/options"
-            android:layout_below="@+id/encabezado2"
+             android:layout_below="@+id/encabezado2"
             android:layout_height="wrap_content">
             <TableRow android:layout_width="match_parent"
                 android:layout_height="45dp">
+
+
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/igp"
                     android:id="@+id/cell1top"
                     android:paddingTop="0dp"
                     android:paddingBottom="0dp"
@@ -72,7 +91,7 @@
                     android:layout_height="53dp">
                     <RelativeLayout android:layout_width="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/igp"
+                        android:background="@color/transparente7"
                         android:id="@+id/cell1"
                         android:paddingTop="0dp"
                         android:paddingBottom="0dp"
@@ -100,13 +119,13 @@
                         android:layout_below="@+id/cell1"
                         android:id="@+id/cell1border"
                         android:layout_height="3dp"
-                        android:background="@color/igp"/>
+                        android:background="@color/transparente"/>
                 </RelativeLayout>
                 <RelativeLayout android:layout_width="4dp"
                     android:layout_height="53dp"
                     android:layout_weight="0"
                     android:layout_gravity="center_horizontal"
-                    android:background="@color/igp">
+                    android:background="@color/transparente">
                     <RelativeLayout android:layout_width="0.5dp"
                         android:layout_height="30dp"
                         android:background="@color/plomo_clarito3"
@@ -115,14 +134,13 @@
                 </RelativeLayout>
                 <RelativeLayout android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/igp"
-                    android:id="@+id/cell2top"
+                    android:id="@+id/transparente7"
                     android:paddingTop="0dp"
                     android:paddingBottom="0dp"
                     android:layout_height="53dp">
                     <RelativeLayout android:layout_width="match_parent"
                         android:layout_weight="1"
-                        android:background="@color/igp"
+                        android:background="@color/transparente7"
                         android:id="@+id/cell2"
                         android:paddingTop="0dp"
                         android:paddingBottom="0dp"
@@ -149,26 +167,11 @@
                         android:layout_below="@+id/cell2"
                         android:id="@+id/cell2border"
                         android:layout_height="3dp"
-                        android:background="@color/igp"/>
+                        android:background="@color/transparente"/>
                 </RelativeLayout>
             </TableRow>
         </TableLayout>
 
-
-        <android.support.v4.view.ViewPager
-            android:id="@+id/vpPager"
-            android:layout_below="@+id/options"
-            android:layout_width="match_parent"
-            android:layout_weight="1"
-
-            android:layout_height="wrap_content">
-            <android.support.v4.view.PagerTabStrip
-                android:id="@+id/pager_header"
-                android:visibility="gone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top" />
-        </android.support.v4.view.ViewPager>
 
         <!-- android:background="@drawable/bordescajon"
                  android:background="@drawable/animatedbutton"
