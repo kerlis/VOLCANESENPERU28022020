@@ -281,6 +281,7 @@
                                         android:layout_centerHorizontal="true"
                                         android:layout_height="match_parent"
                                         android:padding="15dp" >
+
                                         <RelativeLayout
                                             android:layout_width="50dp"
                                             android:background="@drawable/fondoiconoreportes2"
@@ -314,6 +315,7 @@
                                                 android:src="@drawable/mapavideoss"
                                                 />
                                         </RelativeLayout>
+
                                         <TextView android:layout_width="wrap_content"
                                             android:layout_below="@+id/b7"
 
@@ -323,11 +325,25 @@
                                             android:layout_marginTop="20dp"
                                             android:text="VER MAPA"
                                             android:layout_height="wrap_content"/>
+
+
+
+
+
                                     </RelativeLayout>
 
 
                                 </RelativeLayout>
-
+                                <ImageButton
+                                    android:layout_width="42dp"
+                                    android:layout_marginLeft="7dp"
+                                    android:src="@drawable/logo2020"
+                                    android:layout_centerVertical="true"
+                                    android:layout_height="42dp"
+                                    android:clickable="true"
+                                    android:padding="2dp"
+                                    android:id="@+id/abrirbusquedapopup"
+                                    android:layout_marginRight="10dp" />
 
 
                             </RelativeLayout>

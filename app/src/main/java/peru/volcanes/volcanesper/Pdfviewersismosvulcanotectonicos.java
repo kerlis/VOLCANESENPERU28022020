@@ -462,7 +462,7 @@ public class Pdfviewersismosvulcanotectonicos extends FragmentActivity implement
 
         proyeccionsenamhiurl = prefs.getString("proyeccionsenamhiurl", "");
 
-        titulo_trayectorias.setText("Reporte n°" + nombrereporte +"\n" + "Volcan " + nombre_d );
+        titulo_trayectorias.setText("Boletin n°" + nombrereporte +"\n" + "Volcan " + nombre_d );
 
 
 

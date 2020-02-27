@@ -74,10 +74,10 @@ public class Ultimasnotificacionesadapter extends BaseAdapter {
 
 
             if(tiponotificacionreportedeactividad.equals("n04")){
-                tipo.setText("Reporte Ordinario");
+                tipo.setText("Boletin Vulcanológico");
             }
             else{
-                tipo.setText("Reporte Extraordinario");
+                tipo.setText("Boletin Vulcanológico");
             }
 
 
@@ -345,7 +345,8 @@ public class Ultimasnotificacionesadapter extends BaseAdapter {
                             s.getHora_lahar(),
                             s.getHorautc_lahar(),
                             s.getObservaciones_lahar(),
-                            s.getSimulacro_lahar());
+                            s.getSimulacro_lahar(),
+                            s.getQuebrada_lahar());
                 }
             });
         }
@@ -399,6 +400,7 @@ public class Ultimasnotificacionesadapter extends BaseAdapter {
         i.putExtra("HORAUTC",details[5]);
         i.putExtra("OBSERVACIONES",details[6]);
         i.putExtra("SIMULACRO",details[7]);
+        i.putExtra("QUEBRADA",details[8]);
         c.startActivity(i);
     }
 

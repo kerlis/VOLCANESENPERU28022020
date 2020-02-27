@@ -1,6 +1,10 @@
 package peru.volcanes.volcanesper;
+import android.animation.ArgbEvaluator;
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -11,6 +15,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,6 +38,7 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
     String horautc_dat;
     String nobrevolcan;
     String tipodenotificacion_dat;
+    String quebrada_dat;
     private String[] mNavigationDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
     Toolbar toolbar;
@@ -51,11 +59,16 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
     String dato;
     RelativeLayout blocke12;
     RelativeLayout blocke92,b7;
+    ImageButton busqueda3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ultimanotificacionlahardatos);
+
+
+
+
 
 
         b7   = (RelativeLayout) findViewById(R.id.b7);
@@ -70,6 +83,7 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
 
         blocke92 = (RelativeLayout) findViewById(R.id.blocke92);
 
+        busqueda3 = findViewById(R.id.abrirbusquedapopup);
 
 
         blocke92.setOnClickListener(new View.OnClickListener(){
@@ -163,31 +177,7 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
         simulacro_dat = i.getExtras().getString("SIMULACRO");
         horautc_dat = i.getExtras().getString("HORAUTC");
 
-
-
-
-        /*
-
-        Intent i=this.getIntent();
-        dato = i.getExtras().getString("NOTIFICACIONDATA");
-
-
-        observacicones.setText(dato);
-
-
-        tipodenotificacion_dat = dato.split("&")[0];
-        volcan_dat = dato.split("&")[1];
-        tipodeevento_dat = dato.split("&")[2];
-        fecha_dat = dato.split("&")[3];
-        hora_dat = dato.split("&")[4];
-        horautc_dat = dato.split("&")[5];
-        observacicones_dat = dato.split("&")[6];
-        simulacro_dat = dato.split("&")[7];
-
-*/
-
-        //   Toast.makeText(Alertadatoslahar.this,"Descargando imagen del  volcán  " + dato, Toast.LENGTH_LONG).show();
-
+        quebrada_dat = i.getExtras().getString("QUEBRADA");
 
 
 
@@ -202,6 +192,9 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
         String va =  String.valueOf(volcan_dat);
 
         String horautc_subs =  horautc_dat.substring(1);
+
+
+
 
         if(va.equals("1493157379002")){
             nobrevolcan = "Volcán Ubinas";
@@ -360,8 +353,6 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
         });
 
 
-
-
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -374,6 +365,10 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
                 i.putExtra("OBSERVACIONES",observacicones_dat);
                 i.putExtra("SIMULACRO",simulacro_dat);
                 i.putExtra("VOLCAN",volcan_dat);
+                i.putExtra("QUEBRADA",quebrada_dat);
+
+
+
 
                 Ultimanotificacionlahardatos.this.startActivity(i);
             }
@@ -382,7 +377,13 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
 
 
 
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                manageBlinkEffect();
 
+            }
+        });
 
     }
 
@@ -395,6 +396,23 @@ public class Ultimanotificacionlahardatos extends AppCompatActivity implements N
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         return false;
     }
+
+
+
+
+
+
+    @SuppressLint("WrongConstant")
+    private void manageBlinkEffect() {
+        ObjectAnimator anim = ObjectAnimator.ofInt(busqueda3, "backgroundColor", Color.WHITE, Color.RED,Color.RED,Color.RED,
+                Color.WHITE);
+        anim.setDuration(700);
+        anim.setEvaluator(new ArgbEvaluator());
+        anim.setRepeatMode(Animation.REVERSE);
+        anim.setRepeatCount(Animation.INFINITE);
+        anim.start();
+    }
+
 
 
 }

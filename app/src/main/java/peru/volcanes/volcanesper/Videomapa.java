@@ -8,6 +8,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -34,7 +35,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Videomapa extends AppCompatActivity {
 
-    String tipodenotificacion_dat,tipodeevento_dat,fecha_dat,hora_dat,observacicones_dat,simulacro_dat,horautc_dat,volcan_dat, sismogramaurls,codigo_tex,val;
+    String tipodenotificacion_dat,tipodeevento_dat,fecha_dat,hora_dat,observacicones_dat,simulacro_dat,horautc_dat,volcan_dat, sismogramaurls,codigo_tex,val,quebrada_dat, urlvideo;
     WebView webView;
 
     VideoView videoView;
@@ -78,9 +79,6 @@ public class Videomapa extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_videomapa);
-
-
-
 
         blocke1a = (RelativeLayout) findViewById(R.id.blocke1);
         blocke2a = (RelativeLayout) findViewById(R.id.blocke2);
@@ -238,21 +236,53 @@ public class Videomapa extends AppCompatActivity {
         simulacro_dat = i.getExtras().getString("SIMULACRO");
         volcan_dat = i.getExtras().getString("VOLCAN");
 
+        quebrada_dat = i.getExtras().getString("QUEBRADA");
+
+
         val = String.valueOf(volcan_dat);
         int valw = View.VISIBLE;
 
 
 
+        if(quebrada_dat.equals("QUEBRADA VOLCANMAYO")){
+            urlvideo = "http://arteypixel.com/ubinas_lahar_volcanmayo.mp4";
+        }
+        else if(quebrada_dat.equals("QUEBRADA HUAYURAY-PINCHOLLO")){
+            urlvideo = "http://arteypixel.com/sabancaya_lahar_pinchollo.mp4";
+        }
+        else if(quebrada_dat.equals("QUEBRADA EL VOLCÁN")){
+            urlvideo = "http://arteypixel.com/huaynaputina_lahar_el_volcan.mp4";
+        }
+
+
+
+
         final VideoView videoView;
         videoView = (VideoView)findViewById(R.id.video);
-        videoView.setVideoPath("http://arteypixel.com/lahar_pinchollo.mp4");
+        videoView.setVideoPath(urlvideo);
 
 
         MediaController mediaController = new MediaController(this);
         mediaController.setEnabled(true);
-       mediaController.setAnchorView(videoView);
+        mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
         videoView.start();
+
+
+
+
+
+        videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setLooping(true);
+            }
+        });
+
+        videoView.setVideoPath("http://arteypixel.com/lahar_volcanmayo.mp4");
+
+        videoView.start();
+
 
 
 

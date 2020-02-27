@@ -314,13 +314,13 @@ public class Datosultimanotificacion extends FragmentActivity implements Navigat
 
 
         if (tipodenotificacion_dat.equals("n02")){
-            titulo.setText("Reporte Extraordinario de Actividad");
+            titulo.setText("Boletin Vulcanológico");
         }
         else if(tipodenotificacion_dat.equals("n04")){
-            titulo.setText("Reporte Ordinario de Actividad ");
+            titulo.setText("Boletin Vulcanológico");
         }
         else{
-            titulo.setText("Reporte Extraordinario de Actividad");
+            titulo.setText("Boletin Vulcanológico");
 
         }
 
@@ -370,13 +370,13 @@ public class Datosultimanotificacion extends FragmentActivity implements Navigat
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
 
-                String shareBody =   "Reporte de actividad volcanica - "   + nobrevolcan + "\n" +
+                String shareBody =   "Boletin Vulcanológico- "   + nobrevolcan + "\n" +
                         // "Tipo de evento: " + tipodeevento_subs2 + "\n" +
                         "Fecha: " +  fecha_dat + "\n" +
                         "Hora Local: " + hora_dat + " / Hora UTC: " + horautc_dat + "\n" +
                         "URL reporte PDF: " + reporteactividad_dat + "\n" +
                         "Simulacro: " + simulacro_dat + "\n";
-                String shareSub =   "Reporte de actividad volcanica - "   + nobrevolcan + "\n" +
+                String shareSub =   "Boletin Vulcanológico- "   + nobrevolcan + "\n" +
                         // "Tipo de evento: " + tipodeevento_subs2 + "\n" +
                         "Fecha: " +  fecha_dat + "\n" +
                         "Hora Local: " + hora_dat + " / Hora UTC: " + horautc_dat + "\n" +

@@ -259,15 +259,25 @@ anterior ok!!
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        -->
+
+
+
+
         <service
             android:name=".Servicenotdhn"
             android:enabled="true"
             android:exported="true" />
+
         <service
             android:name=".ChildEventListener"
             android:enabled="true"
             android:exported="true" />
+
+
+
+              -->
+
+
         <service android:name=".Firebasemessagingthird">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

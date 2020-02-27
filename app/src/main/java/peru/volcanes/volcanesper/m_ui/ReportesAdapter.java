@@ -74,7 +74,7 @@ public class ReportesAdapter extends BaseAdapter {
         visualizar.setTypeface(fontAwesomeFont);
         final reporteactividad s= (reporteactividad) this.getItem(position);
         fecha_hora.setText("Fecha de emisión : " + s.getFecha());
-        evento.setText("Reporte n.° " + s.getNombrereporte());
+        evento.setText("Boletin n.° " + s.getNombrereporte());
 
         visualizaerfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +101,7 @@ public class ReportesAdapter extends BaseAdapter {
 
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                String shareBody = "Reporte de actividad volcanica " + s.getNombrereporte();
+                String shareBody = "Boletines Vulcanológicos " + s.getNombrereporte();
                 String shareSub = s.getPdfurl();
                 sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, shareBody);
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareSub);

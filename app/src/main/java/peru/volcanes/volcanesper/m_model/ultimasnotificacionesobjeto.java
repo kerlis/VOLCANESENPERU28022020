@@ -25,6 +25,7 @@ public class ultimasnotificacionesobjeto {
     String volcan_lahar;
     String horautc_lahar;
     String fecha_lahar;
+    String quebrada_lahar;
 
 
 
@@ -302,6 +303,53 @@ public class ultimasnotificacionesobjeto {
     }
 
 
+    public String getQuebrada_lahar() {
+        return quebrada_lahar;
+    }
+
+    public void setQuebrada_lahar(String quebrada_lahar) {
+        this.quebrada_lahar = quebrada_lahar;
+    }
+
+    public ultimasnotificacionesobjeto(String codigovolcan_reporteactividad, String fecha_reporteactividad, String hora_reporteactividad, String horautc_reporteactividad, String pdfurl_reporteactividad, String simulacro_reporteactividad, String tiponotificacion_reporteactividad, String nombrereporte_reporteactividad, String coloralerta_reporteactividad, String analisis_reporteactividad, String conclusiones_reporteactividad, String hora_lahar, String observaciones_lahar, String simulacro_lahar, String tipodevento_lahar, String tiponotificacion_lahar, String volcan_lahar, String horautc_lahar, String fecha_lahar, String quebrada_lahar, String tiponotificacion_cenizas, String volcan_cenizas, String pueblos_cenizas, String tipodevento_cenizas, String direccion_cenizas, String radio_cenizas, String fecha_cenizas, String hora_cenizas, String horautc_cenizas, String recomendaciones_cenizas, String observaciones_cenizas, String simulacro_cenizas, String codigovolcan) {
+        this.codigovolcan_reporteactividad = codigovolcan_reporteactividad;
+        this.fecha_reporteactividad = fecha_reporteactividad;
+        this.hora_reporteactividad = hora_reporteactividad;
+        this.horautc_reporteactividad = horautc_reporteactividad;
+        this.pdfurl_reporteactividad = pdfurl_reporteactividad;
+        this.simulacro_reporteactividad = simulacro_reporteactividad;
+        this.tiponotificacion_reporteactividad = tiponotificacion_reporteactividad;
+        this.nombrereporte_reporteactividad = nombrereporte_reporteactividad;
+        this.coloralerta_reporteactividad = coloralerta_reporteactividad;
+        this.analisis_reporteactividad = analisis_reporteactividad;
+        this.conclusiones_reporteactividad = conclusiones_reporteactividad;
+        this.hora_lahar = hora_lahar;
+        this.observaciones_lahar = observaciones_lahar;
+        this.simulacro_lahar = simulacro_lahar;
+        this.tipodevento_lahar = tipodevento_lahar;
+        this.tiponotificacion_lahar = tiponotificacion_lahar;
+        this.volcan_lahar = volcan_lahar;
+        this.horautc_lahar = horautc_lahar;
+        this.fecha_lahar = fecha_lahar;
+        this.quebrada_lahar = quebrada_lahar;
+        this.tiponotificacion_cenizas = tiponotificacion_cenizas;
+        this.volcan_cenizas = volcan_cenizas;
+        this.pueblos_cenizas = pueblos_cenizas;
+        this.tipodevento_cenizas = tipodevento_cenizas;
+        this.direccion_cenizas = direccion_cenizas;
+        this.radio_cenizas = radio_cenizas;
+        this.fecha_cenizas = fecha_cenizas;
+        this.hora_cenizas = hora_cenizas;
+        this.horautc_cenizas = horautc_cenizas;
+        this.recomendaciones_cenizas = recomendaciones_cenizas;
+        this.observaciones_cenizas = observaciones_cenizas;
+        this.simulacro_cenizas = simulacro_cenizas;
+        this.codigovolcan = codigovolcan;
+    }
+
+
+    /*
+
     public ultimasnotificacionesobjeto(String codigovolcan_reporteactividad, String fecha_reporteactividad, String hora_reporteactividad, String horautc_reporteactividad, String pdfurl_reporteactividad, String simulacro_reporteactividad, String tiponotificacion_reporteactividad, String nombrereporte_reporteactividad, String coloralerta_reporteactividad, String analisis_reporteactividad, String conclusiones_reporteactividad, String hora_lahar, String observaciones_lahar, String simulacro_lahar, String tipodevento_lahar, String tiponotificacion_lahar, String volcan_lahar, String horautc_lahar, String fecha_lahar, String tiponotificacion_cenizas, String volcan_cenizas, String pueblos_cenizas, String tipodevento_cenizas, String direccion_cenizas, String radio_cenizas, String fecha_cenizas, String hora_cenizas, String horautc_cenizas, String recomendaciones_cenizas, String observaciones_cenizas, String simulacro_cenizas, String codigovolcan) {
         this.codigovolcan_reporteactividad = codigovolcan_reporteactividad;
         this.fecha_reporteactividad = fecha_reporteactividad;
@@ -336,6 +384,7 @@ public class ultimasnotificacionesobjeto {
         this.simulacro_cenizas = simulacro_cenizas;
         this.codigovolcan = codigovolcan;
     }
+    */
 
     public ultimasnotificacionesobjeto() {
     }
