@@ -44,7 +44,7 @@
             android:layout_width="80dp"
             android:layout_gravity="left"
             android:layout_marginLeft="4dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="8dp"
             android:id="@+id/satelite"
             android:text="SATELITAL"
             android:textSize="14dp"
@@ -54,7 +54,7 @@
         </Button>
         <Button
             android:layout_width="80dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="90dp"
             android:textColor="@color/blanco"
             android:id="@+id/terreno"
@@ -65,7 +65,7 @@
         </Button>
         <Button
             android:layout_width="40dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="8dp"
             android:layout_marginLeft="200dp"
             android:textColor="@color/blanco"
             android:id="@+id/localizacion"

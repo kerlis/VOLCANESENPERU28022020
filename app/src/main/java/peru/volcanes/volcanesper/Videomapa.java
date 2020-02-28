@@ -279,7 +279,7 @@ public class Videomapa extends AppCompatActivity {
             }
         });
 
-        videoView.setVideoPath("http://arteypixel.com/lahar_volcanmayo.mp4");
+        videoView.setVideoPath(urlvideo);
 
         videoView.start();
 

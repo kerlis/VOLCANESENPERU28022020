@@ -100,24 +100,22 @@
                         android:layout_height="110dp"
                         android:layout_alignParentTop="true"
                         android:gravity="center_horizontal">
-
-                      <!--  <RelativeLayout
-                            android:id="@+id/b2"
+                        <!--
+                                                <RelativeLayout
+                                                    android:id="@+id/b2"
+                                                    android:layout_width="75dp"
+                                                    android:layout_height="75dp"
+                                                    android:layout_centerHorizontal="true"
+                                                    android:layout_centerVertical="true" >-->
+                        <ImageView
+                            android:id="@+id/estado_volcan"
                             android:layout_width="75dp"
                             android:layout_height="75dp"
                             android:layout_centerHorizontal="true"
                             android:layout_centerVertical="true"
-                            android:background="@drawable/fondovolcan2">
-                            -->
-                            <ImageView
-                                android:id="@+id/estado_volcan"
-                                android:layout_width="55dp"
-                                android:layout_height="55dp"
-                                android:layout_centerHorizontal="true"
-                                android:layout_centerVertical="true"
-                                android:gravity="center_vertical"
-                                android:src="@drawable/volcaniconx"/>
-                     <!--   </RelativeLayout>-->
+                            android:gravity="center_vertical"
+                            android:src="@drawable/volcaniconx"/>
+                        <!--    </RelativeLayout>-->
 
                         <TextView android:layout_width="match_parent"
                             android:layout_below="@+id/b2"
@@ -233,37 +231,115 @@
                                 android:layout_marginTop="15dp"
                                 android:layout_height="wrap_content"
                                 android:textAlignment="center">
-                                <RelativeLayout android:layout_width="210dp"
-                                    android:backgroundTint="@color/colorPrimary"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_height="match_parent"
-                                    android:padding="0dp" >
-                                    <RelativeLayout
-                                        android:layout_width="65dp"
-                                        android:background="@drawable/fondoiconoreportes2"
-                                        android:id="@+id/b6"
+
+                                <RelativeLayout android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:gravity="center_horizontal"
+                                    android:layout_height="wrap_content">
+
+
+
+
+                                    <RelativeLayout android:layout_width="wrap_content"
+                                        android:backgroundTint="@color/colorPrimary"
+                                        android:id="@+id/one"
                                         android:layout_centerHorizontal="true"
-                                        android:layout_centerVertical="true"
-                                        android:layout_height="65dp">
-                                        <TextView  android:layout_width="wrap_content"
-                                            android:id="@+id/compartir"
-                                            android:layout_height="wrap_content"
-                                            style="@style/iconoreportesestilolarge"
-                                            android:gravity="center"
+                                        android:layout_height="match_parent"
+                                        android:padding="15dp" >
+
+
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:background="@drawable/fondoiconoreportes2"
+                                            android:id="@+id/b6"
                                             android:layout_centerHorizontal="true"
-                                            android:text="@string/comparte"
-                                            android:layout_gravity="center_vertical"
-                                            android:layout_centerVertical="true">
-                                        </TextView>
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="50dp">
+                                            <TextView  android:layout_width="wrap_content"
+                                                android:id="@+id/compartir"
+                                                android:layout_height="wrap_content"
+                                                style="@style/iconoreportesestilo"
+                                                android:gravity="center"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="@string/comparte"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_centerVertical="true">
+                                            </TextView>
+                                        </RelativeLayout>
+                                        <TextView android:layout_width="wrap_content"
+                                            android:layout_below="@+id/b6"
+                                            android:layout_centerHorizontal="true"
+                                            android:textStyle="bold"
+                                            android:textSize="10dp"
+                                            android:layout_marginTop="20dp"
+                                            android:text="COMPARTIR"
+                                            android:layout_height="wrap_content"/>
                                     </RelativeLayout>
-                                    <TextView android:layout_width="wrap_content"
-                                        android:layout_below="@+id/b6"
+
+
+
+
+
+
+
+
+                                    <RelativeLayout android:layout_width="wrap_content"
+                                        android:layout_toLeftOf="@+id/one"
+                                        android:backgroundTint="@color/colorPrimary"
                                         android:layout_centerHorizontal="true"
-                                        android:textStyle="bold"
-                                         android:layout_marginTop="20dp"
-                                        android:text="COMPARTIR"
-                                        android:layout_height="wrap_content"/>
+                                        android:layout_height="match_parent"
+                                        android:padding="15dp" >
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:background="@drawable/fondoiconoreportes2"
+                                            android:id="@+id/b7"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="50dp">
+
+                                            <TextView  android:layout_width="wrap_content"
+                                                android:id="@+id/compartir2"
+                                                android:layout_height="wrap_content"
+                                                style="@style/iconoreportesestilo"
+                                                android:visibility="gone"
+                                                android:gravity="center"
+                                                android:layout_centerHorizontal="true"
+                                                android:text="@string/compartevideo"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_centerVertical="true">
+                                            </TextView>
+
+                                            <ImageView android:layout_width="22dp"
+                                                android:layout_centerHorizontal="true"
+                                                android:gravity="center"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_centerVertical="true"
+                                                android:layout_height="22dp"
+                                                android:id="@+id/botonvideo"
+                                                android:src="@drawable/mapavideoss"/>
+                                        </RelativeLayout>
+
+
+                                        <TextView android:layout_width="wrap_content"
+                                            android:id="@+id/blinktext"
+                                            android:layout_below="@+id/b7"
+                                            android:layout_centerHorizontal="true"
+                                            android:textStyle="bold"
+                                            android:textSize="10dp"
+                                            android:layout_marginTop="20dp"
+                                            android:text="VER MAPA"
+                                            android:layout_height="wrap_content"/>
+                                    </RelativeLayout>
+
+
+
+
+
                                 </RelativeLayout>
+
+
                             </RelativeLayout>
 
 

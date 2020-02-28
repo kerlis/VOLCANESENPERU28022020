@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -52,11 +54,18 @@ public class Alertadatoslahar extends FragmentActivity implements NavigationView
     String dato;
     RelativeLayout blocke12;
     RelativeLayout blocke92;
+    String quebrada_dat;
+    RelativeLayout b7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.datosalertalahar);
+
+        b7   = (RelativeLayout) findViewById(R.id.b7);
+        Animation anima = AnimationUtils.loadAnimation(this, R.anim.blinking);
+        b7.startAnimation(anima);
+
         compartirfile= (RelativeLayout) findViewById(R.id.b6);
         blocke1a = (RelativeLayout) findViewById(R.id.blocke1);
         blocke2a = (RelativeLayout) findViewById(R.id.blocke2);
@@ -155,6 +164,7 @@ public class Alertadatoslahar extends FragmentActivity implements NavigationView
         horautc_dat = dato.split("&")[5];
         observacicones_dat = dato.split("&")[6];
         simulacro_dat = dato.split("&")[7];
+        quebrada_dat = dato.split("&")[8];
 
 
         compartir = (TextView) findViewById(R.id.compartir);
@@ -317,7 +327,22 @@ public class Alertadatoslahar extends FragmentActivity implements NavigationView
             }
         });
 
-
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Alertadatoslahar.this,Videomapa.class);
+                i.putExtra("TIPODENOTIFICACION",tipodenotificacion_dat);
+                i.putExtra("TIPODEEVENTO",tipodeevento_dat);
+                i.putExtra("FECHA",fecha_dat);
+                i.putExtra("HORA",hora_dat);
+                i.putExtra("HORAUTC",horautc_dat);
+                i.putExtra("OBSERVACIONES",observacicones_dat);
+                i.putExtra("SIMULACRO",simulacro_dat);
+                i.putExtra("VOLCAN",volcan_dat);
+                i.putExtra("QUEBRADA",quebrada_dat);
+                Alertadatoslahar.this.startActivity(i);
+            }
+        });
     }
     void setupDrawerToggle(){
         mDrawerToggle = new android.support.v7.app.ActionBarDrawerToggle(this,mDrawerLayout,toolbar,R.string.app_name, R.string.app_name);

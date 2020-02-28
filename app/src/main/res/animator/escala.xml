@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+
+
+
+
+
+
+    <objectAnimator android:propertyName="scaleX"
+        android:duration="1000"
+         android:repeatCount="infinite"
+
+
+        android:valueTo="0.75"
+
+
+
+
+        android:valueType="floatType"/>
+    <objectAnimator android:propertyName="scaleY"
+        android:duration="1000"
+         android:repeatCount="infinite"
+
+
+        android:valueTo="0.75"
+
+
+
+        android:valueType="floatType"/>
+
+
+
+
+
+
+
+
+    <!--
+
+        <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+            android:duration="1000"
+             android:valueFrom="1"
+
+            android:valueTo="200"
+
+
+            android:repeatCount="infinite"
+
+            android:valueType="floatType"
+            android:propertyName="scaleY"
+             android:repeatMode="reverse"/>
+
+
+        <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+            android:duration="1000"
+            android:valueFrom="1"
+
+            android:valueTo="200"
+            android:repeatCount="infinite"
+
+            android:valueType="floatType"
+            android:repeatMode="reverse"/>
+
+
+
+        <objectAnimator android:propertyName="scaleX"
+            android:duration="@android:integer/config_shortAnimTime"
+            android:valueTo="1.5"
+            android:valueType="floatType"/>
+        <objectAnimator android:propertyName="scaleY"
+            android:duration="@android:integer/config_shortAnimTime"
+            android:valueTo="1.5"
+            android:valueType="floatType"/>
+
+
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:repeatCount="infinite"
+        android:valueFrom="18F"
+
+        android:repeatMode="reverse"
+        android:duration="500"
+        android:valueTo="1f"/>
+  -->
+
+</set>

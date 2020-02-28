@@ -62,7 +62,7 @@
                             android:textStyle="bold"
                             android:textSize="20sp"
                             android:textColor="@color/blanco"
-                            android:text="Mapa de ocurrencia del Lahar"/>
+                            android:text="Mapa de Ocurrencia del Lahar"/>
 
                     </RelativeLayout>
 

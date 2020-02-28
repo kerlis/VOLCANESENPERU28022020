@@ -104,6 +104,7 @@ public class Periodwork extends Worker {
     @Override
     public Result doWork() {
 
+        /*
         Conexionsql conn = new Conexionsql(getApplicationContext(),"bd_notificaciones", null,1 );
         SQLiteDatabase db = conn.getReadableDatabase();
         ArrayList<String> array_list = new ArrayList<String>();
@@ -162,9 +163,14 @@ public class Periodwork extends Worker {
             Log.d("CONEXION","NO EXISTE CONECTIVIDAD");
         }
 
+        */
+
         return Result.retry();
+
     }
 
+
+    /*
     private void ultimanotificacion(String datoslast, String tipo, String valormemoria) {
         DatabaseReference mDatabase;
         mDatabase = FirebaseDatabase.getInstance("https://volcanesperu-d84cf.firebaseio.com/").getReference("actividadvolcanica");
@@ -1949,9 +1955,7 @@ public class Periodwork extends Worker {
         }
     }
 
-
-
-
+*/
 
 
 

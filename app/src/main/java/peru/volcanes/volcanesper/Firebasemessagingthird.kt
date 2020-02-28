@@ -209,6 +209,9 @@ class Firebasemessagingthird : FirebaseMessagingService() {
             val horautc: String = remoteMessage!!.split("&")[5]
             val observaciones: String = remoteMessage!!.split("&")[6]
             val simulacro: String = remoteMessage!!.split("&")[7]
+            val quebrada: String = remoteMessage!!.split("&")[8]
+
+
             val asubstring = fecha.substring(0, 10)
             var nobrevolcan_r2: String
 
@@ -264,6 +267,7 @@ class Firebasemessagingthird : FirebaseMessagingService() {
                     val notificationBuilder = NotificationCompat.Builder(this, channelId)
                             .setSmallIcon(R.mipmap.ic_launcher)
                             .setColor(Color.parseColor("#001665"))
+                            .setLargeIcon(R.drawable.ic_stat_name)
                             .setContentTitle("Alerta de Lahar")
                             .setContentText(" $nobrevolcan_r2  $asubstring | $hora ")
                             .setAutoCancel(true)
@@ -379,6 +383,7 @@ class Firebasemessagingthird : FirebaseMessagingService() {
             val horautc: String = remoteMessage!!.split("&")[5]
             val observaciones: String = remoteMessage!!.split("&")[6]
             val simulacro: String = remoteMessage!!.split("&")[7]
+            val quebrada: String = remoteMessage!!.split("&")[8]
 
             val asubstring = fecha.substring(0, 10)
             var nobrevolcan_r2: String

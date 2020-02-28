@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<animated-vector
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/vectorcirculo" >
+
+
+    <target
+        android:name="path_19"
+        android:animation="@animator/rotation"/>
+
+</animated-vector>
+
+
+
